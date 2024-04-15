@@ -7,23 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F3BE4512BCD1818009D8C35 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4502BCD1818009D8C35 /* LoginPageViewController.swift */; };
+		1F3BE4532BCD1854009D8C35 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4522BCD1854009D8C35 /* HomePageViewController.swift */; };
+		1F3BE45E2BCD1F76009D8C35 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE45D2BCD1F76009D8C35 /* ProductTableViewController.swift */; };
+		1F3BE4602BCD1F84009D8C35 /* CompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE45F2BCD1F84009D8C35 /* CompanyTableViewController.swift */; };
+		1F3BE4642BCD1FB5009D8C35 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */; };
+		1F3BE4662BCD5CE8009D8C35 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4652BCD5CE8009D8C35 /* SettingViewController.swift */; };
 		1F64FEB12BCC66B300B96BB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64FEB02BCC66B300B96BB3 /* AppDelegate.swift */; };
 		1F64FEB32BCC66B300B96BB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64FEB22BCC66B300B96BB3 /* SceneDelegate.swift */; };
 		1F64FEB52BCC66B300B96BB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64FEB42BCC66B300B96BB3 /* ViewController.swift */; };
-		1F64FEB82BCC66B300B96BB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1F64FEB72BCC66B300B96BB3 /* Base */; };
 		1F64FEBA2BCC66B400B96BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F64FEB92BCC66B400B96BB3 /* Assets.xcassets */; };
 		1F64FEBD2BCC66B400B96BB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1F64FEBC2BCC66B400B96BB3 /* Base */; };
+		1F64FEC62BCC68ED00B96BB3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1F64FEC52BCC68ED00B96BB3 /* Alamofire */; };
+		5EF36CE240880B172C009C7A /* Pods_Bir_Esnaf_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE2EA558C666FBE7FAC612 /* Pods_Bir_Esnaf_MVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F3BE4502BCD1818009D8C35 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		1F3BE4522BCD1854009D8C35 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		1F3BE45D2BCD1F76009D8C35 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		1F3BE45F2BCD1F84009D8C35 /* CompanyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewController.swift; sourceTree = "<group>"; };
+		1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		1F3BE4652BCD5CE8009D8C35 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		1F64FEAD2BCC66B300B96BB3 /* Bir Esnaf MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bir Esnaf MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F64FEB02BCC66B300B96BB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F64FEB22BCC66B300B96BB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1F64FEB42BCC66B300B96BB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1F64FEB72BCC66B300B96BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F64FEB92BCC66B400B96BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F64FEBC2BCC66B400B96BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F64FEBE2BCC66B400B96BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9490B79BCA71BA04AD717D4A /* Pods-Bir Esnaf MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf MVVM.debug.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		D00AC870DBA2CAC1D20476D5 /* Pods-Bir Esnaf MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf MVVM.release.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		EFAE2EA558C666FBE7FAC612 /* Pods_Bir_Esnaf_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bir_Esnaf_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +46,93 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF36CE240880B172C009C7A /* Pods_Bir_Esnaf_MVVM.framework in Frameworks */,
+				1F64FEC62BCC68ED00B96BB3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F3BE4462BCD008F009D8C35 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1F64FEB02BCC66B300B96BB3 /* AppDelegate.swift */,
+				1F64FEB42BCC66B300B96BB3 /* ViewController.swift */,
+				1F64FEB22BCC66B300B96BB3 /* SceneDelegate.swift */,
+				1F64FEB92BCC66B400B96BB3 /* Assets.xcassets */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		1F3BE4472BCD00F1009D8C35 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1F3BE4492BCD014C009D8C35 /* BirEsnaf */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1F3BE4492BCD014C009D8C35 /* BirEsnaf */ = {
+			isa = PBXGroup;
+			children = (
+				1F3BE44D2BCD017C009D8C35 /* Service */,
+				1F3BE44C2BCD0176009D8C35 /* Model */,
+				1F3BE44B2BCD0168009D8C35 /* ViewModel */,
+				1F3BE44A2BCD0161009D8C35 /* View */,
+			);
+			path = BirEsnaf;
+			sourceTree = "<group>";
+		};
+		1F3BE44A2BCD0161009D8C35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F3BE4502BCD1818009D8C35 /* LoginPageViewController.swift */,
+				1F3BE4522BCD1854009D8C35 /* HomePageViewController.swift */,
+				1F3BE45C2BCD18EA009D8C35 /* TabBarItem */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F3BE44B2BCD0168009D8C35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F3BE44C2BCD0176009D8C35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F3BE44D2BCD017C009D8C35 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1F3BE45C2BCD18EA009D8C35 /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				1F3BE45D2BCD1F76009D8C35 /* ProductTableViewController.swift */,
+				1F3BE45F2BCD1F84009D8C35 /* CompanyTableViewController.swift */,
+				1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */,
+				1F3BE4652BCD5CE8009D8C35 /* SettingViewController.swift */,
+			);
+			path = TabBarItem;
+			sourceTree = "<group>";
+		};
 		1F64FEA42BCC66B300B96BB3 = {
 			isa = PBXGroup;
 			children = (
 				1F64FEAF2BCC66B300B96BB3 /* Bir Esnaf MVVM */,
 				1F64FEAE2BCC66B300B96BB3 /* Products */,
+				2A103B1F489DA2F4ED3F4766 /* Pods */,
+				2DBEF54FFCBE85CA43F63C04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +147,29 @@
 		1F64FEAF2BCC66B300B96BB3 /* Bir Esnaf MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				1F64FEB02BCC66B300B96BB3 /* AppDelegate.swift */,
-				1F64FEB22BCC66B300B96BB3 /* SceneDelegate.swift */,
-				1F64FEB42BCC66B300B96BB3 /* ViewController.swift */,
-				1F64FEB62BCC66B300B96BB3 /* Main.storyboard */,
-				1F64FEB92BCC66B400B96BB3 /* Assets.xcassets */,
+				1F3BE4472BCD00F1009D8C35 /* Features */,
+				1F3BE4462BCD008F009D8C35 /* Core */,
 				1F64FEBB2BCC66B400B96BB3 /* LaunchScreen.storyboard */,
 				1F64FEBE2BCC66B400B96BB3 /* Info.plist */,
 			);
 			path = "Bir Esnaf MVVM";
+			sourceTree = "<group>";
+		};
+		2A103B1F489DA2F4ED3F4766 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9490B79BCA71BA04AD717D4A /* Pods-Bir Esnaf MVVM.debug.xcconfig */,
+				D00AC870DBA2CAC1D20476D5 /* Pods-Bir Esnaf MVVM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2DBEF54FFCBE85CA43F63C04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE2EA558C666FBE7FAC612 /* Pods_Bir_Esnaf_MVVM.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +179,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F64FEC12BCC66B400B96BB3 /* Build configuration list for PBXNativeTarget "Bir Esnaf MVVM" */;
 			buildPhases = (
+				9484E158D6130121701D3690 /* [CP] Check Pods Manifest.lock */,
 				1F64FEA92BCC66B300B96BB3 /* Sources */,
 				1F64FEAA2BCC66B300B96BB3 /* Frameworks */,
 				1F64FEAB2BCC66B300B96BB3 /* Resources */,
+				33B4174B29D5958BD329129D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Bir Esnaf MVVM";
+			packageProductDependencies = (
+				1F64FEC52BCC68ED00B96BB3 /* Alamofire */,
+			);
 			productName = "Bir Esnaf MVVM";
 			productReference = 1F64FEAD2BCC66B300B96BB3 /* Bir Esnaf MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +221,9 @@
 				Base,
 			);
 			mainGroup = 1F64FEA42BCC66B300B96BB3;
+			packageReferences = (
+				1F64FEC42BCC68ED00B96BB3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 1F64FEAE2BCC66B300B96BB3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,11 +240,52 @@
 			files = (
 				1F64FEBA2BCC66B400B96BB3 /* Assets.xcassets in Resources */,
 				1F64FEBD2BCC66B400B96BB3 /* Base in Resources */,
-				1F64FEB82BCC66B300B96BB3 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33B4174B29D5958BD329129D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9484E158D6130121701D3690 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bir Esnaf MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F64FEA92BCC66B300B96BB3 /* Sources */ = {
@@ -139,7 +293,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F64FEB52BCC66B300B96BB3 /* ViewController.swift in Sources */,
+				1F3BE4642BCD1FB5009D8C35 /* ShopViewController.swift in Sources */,
 				1F64FEB12BCC66B300B96BB3 /* AppDelegate.swift in Sources */,
+				1F3BE4512BCD1818009D8C35 /* LoginPageViewController.swift in Sources */,
+				1F3BE45E2BCD1F76009D8C35 /* ProductTableViewController.swift in Sources */,
+				1F3BE4662BCD5CE8009D8C35 /* SettingViewController.swift in Sources */,
+				1F3BE4602BCD1F84009D8C35 /* CompanyTableViewController.swift in Sources */,
+				1F3BE4532BCD1854009D8C35 /* HomePageViewController.swift in Sources */,
 				1F64FEB32BCC66B300B96BB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +307,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1F64FEB62BCC66B300B96BB3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F64FEB72BCC66B300B96BB3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1F64FEBB2BCC66B400B96BB3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -203,7 +355,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +418,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +439,7 @@
 		};
 		1F64FEC22BCC66B400B96BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9490B79BCA71BA04AD717D4A /* Pods-Bir Esnaf MVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,7 +450,6 @@
 				INFOPLIST_FILE = "Bir Esnaf MVVM/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,14 +459,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "seymaArslan.Bir-Esnaf-MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1F64FEC32BCC66B400B96BB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00AC870DBA2CAC1D20476D5 /* Pods-Bir Esnaf MVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,7 +482,6 @@
 				INFOPLIST_FILE = "Bir Esnaf MVVM/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,9 +491,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "seymaArslan.Bir-Esnaf-MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +523,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F64FEC42BCC68ED00B96BB3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F64FEC52BCC68ED00B96BB3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F64FEC42BCC68ED00B96BB3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F64FEA52BCC66B300B96BB3 /* Project object */;
 }
