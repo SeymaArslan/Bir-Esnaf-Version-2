@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F3BE4512BCD1818009D8C35 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4502BCD1818009D8C35 /* LoginPageViewController.swift */; };
 		1F3BE4532BCD1854009D8C35 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4522BCD1854009D8C35 /* HomePageViewController.swift */; };
-		1F3BE4602BCD1F84009D8C35 /* CompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE45F2BCD1F84009D8C35 /* CompanyTableViewController.swift */; };
 		1F3BE4642BCD1FB5009D8C35 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */; };
 		1F3BE4662BCD5CE8009D8C35 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4652BCD5CE8009D8C35 /* SettingViewController.swift */; };
 		1F64FEB12BCC66B300B96BB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64FEB02BCC66B300B96BB3 /* AppDelegate.swift */; };
@@ -21,13 +20,15 @@
 		1F7436992BCE992B00D9F813 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7436982BCE992B00D9F813 /* ProductViewController.swift */; };
 		1F74369B2BCE9C6300D9F813 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F74369A2BCE9C6300D9F813 /* CompanyViewController.swift */; };
 		1F74369E2BCE9D2C00D9F813 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F74369D2BCE9D2C00D9F813 /* ProductTableViewCell.swift */; };
+		1F7436A02BCEB96800D9F813 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F74369F2BCEB96800D9F813 /* Product.swift */; };
+		1F7436A22BCEB9E600D9F813 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7436A12BCEB9E600D9F813 /* Company.swift */; };
+		1FB7EA3E2BD14EF300C0F61E /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7EA3D2BD14EF300C0F61E /* CompanyTableViewCell.swift */; };
 		5EF36CE240880B172C009C7A /* Pods_Bir_Esnaf_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE2EA558C666FBE7FAC612 /* Pods_Bir_Esnaf_MVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F3BE4502BCD1818009D8C35 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		1F3BE4522BCD1854009D8C35 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		1F3BE45F2BCD1F84009D8C35 /* CompanyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewController.swift; sourceTree = "<group>"; };
 		1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		1F3BE4652BCD5CE8009D8C35 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		1F64FEAD2BCC66B300B96BB3 /* Bir Esnaf MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bir Esnaf MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +41,9 @@
 		1F7436982BCE992B00D9F813 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		1F74369A2BCE9C6300D9F813 /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		1F74369D2BCE9D2C00D9F813 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		1F74369F2BCEB96800D9F813 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		1F7436A12BCEB9E600D9F813 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		1FB7EA3D2BD14EF300C0F61E /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		9490B79BCA71BA04AD717D4A /* Pods-Bir Esnaf MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf MVVM.debug.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AC870DBA2CAC1D20476D5 /* Pods-Bir Esnaf MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf MVVM.release.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		EFAE2EA558C666FBE7FAC612 /* Pods_Bir_Esnaf_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bir_Esnaf_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +112,8 @@
 		1F3BE44C2BCD0176009D8C35 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1F74369F2BCEB96800D9F813 /* Product.swift */,
+				1F7436A12BCEB9E600D9F813 /* Company.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				1F74369C2BCE9D1800D9F813 /* Cells */,
-				1F3BE45F2BCD1F84009D8C35 /* CompanyTableViewController.swift */,
 				1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */,
 				1F3BE4652BCD5CE8009D8C35 /* SettingViewController.swift */,
 				1F7436982BCE992B00D9F813 /* ProductViewController.swift */,
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				1F74369D2BCE9D2C00D9F813 /* ProductTableViewCell.swift */,
+				1FB7EA3D2BD14EF300C0F61E /* CompanyTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -311,11 +317,13 @@
 				1F64FEB12BCC66B300B96BB3 /* AppDelegate.swift in Sources */,
 				1F3BE4512BCD1818009D8C35 /* LoginPageViewController.swift in Sources */,
 				1F74369E2BCE9D2C00D9F813 /* ProductTableViewCell.swift in Sources */,
+				1F7436A02BCEB96800D9F813 /* Product.swift in Sources */,
 				1F74369B2BCE9C6300D9F813 /* CompanyViewController.swift in Sources */,
+				1FB7EA3E2BD14EF300C0F61E /* CompanyTableViewCell.swift in Sources */,
 				1F3BE4662BCD5CE8009D8C35 /* SettingViewController.swift in Sources */,
-				1F3BE4602BCD1F84009D8C35 /* CompanyTableViewController.swift in Sources */,
 				1F3BE4532BCD1854009D8C35 /* HomePageViewController.swift in Sources */,
 				1F7436992BCE992B00D9F813 /* ProductViewController.swift in Sources */,
+				1F7436A22BCEB9E600D9F813 /* Company.swift in Sources */,
 				1F64FEB32BCC66B300B96BB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
