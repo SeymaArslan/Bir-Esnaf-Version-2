@@ -26,7 +26,6 @@ class CompanyViewController: UIViewController {
         configureTableView()
         companies = fetchData()
         
-        view.backgroundColor = UIColor(named: "backgroundColor")
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTap))
         
         navigationItem.rightBarButtonItem = addButton
@@ -43,7 +42,7 @@ class CompanyViewController: UIViewController {
         setTableViewDelegates() // set delegates
         tableView.rowHeight = 75 // set row height
         tableView.register(CompanyTableViewCell.self, forCellReuseIdentifier: Cells.compCell) // register cells
-        
+        tableView.backgroundColor = UIColor(named: Colors.background)
         
         tableView.snp.makeConstraints { make in  // set constraints
             make.top.equalToSuperview()

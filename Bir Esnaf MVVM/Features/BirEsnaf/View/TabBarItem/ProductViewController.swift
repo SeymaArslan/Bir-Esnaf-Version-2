@@ -25,7 +25,6 @@ class ProductViewController: UIViewController {
         products = fetchData()
         configureTableView()
         
-        view.backgroundColor = UIColor(named: "backgroundColor")
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTap))
         
         navigationItem.rightBarButtonItem = addButton
@@ -42,7 +41,7 @@ class ProductViewController: UIViewController {
         setTableViewDelegates() // set delegates
         tableView.rowHeight = 120 // set row height
         tableView.register(ProductTableViewCell.self, forCellReuseIdentifier: Cells.prodCell) // register cells
-        
+        tableView.backgroundColor = UIColor(named: Colors.background)
         
         tableView.snp.makeConstraints { make in  // set constraints
             make.top.equalToSuperview()
@@ -76,9 +75,9 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ProductViewController {
     func fetchData() -> [Product] {
-        let data = Product(prodId: "1", userMail: "deneme", prodName: "deneme", prodTotal: "50", prodPrice: "12.5 tl", count: "2")
-        let data2 = Product(prodId: "2", userMail: "deneme2", prodName: "deneme2", prodTotal: "100", prodPrice: "55 tl", count: "deneme2")
-        let data3 = Product(prodId: "3", userMail: "deneme3", prodName: "deneme3", prodTotal: "30", prodPrice: "120 tl", count: "deneme3")
+        let data = Product(prodId: "1", userMail: "deneme", prodName: "deneme", prodTotal: "50", prodPrice: "0 ₺", count: "2")
+        let data2 = Product(prodId: "2", userMail: "deneme2", prodName: "deneme2", prodTotal: "100", prodPrice: "55 ₺", count: "deneme2")
+        let data3 = Product(prodId: "3", userMail: "deneme3", prodName: "deneme3", prodTotal: "30", prodPrice: "120 ₺", count: "deneme3")
         return [data, data2, data3]
     }
 }

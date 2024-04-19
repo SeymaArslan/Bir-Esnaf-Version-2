@@ -14,7 +14,7 @@ class CompanyTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        contentView.backgroundColor = UIColor(named: Colors.cell)
         addSubview(companyTitle)
         
         configureTitle()
@@ -31,6 +31,7 @@ class CompanyTableViewCell: UITableViewCell {
     
     func configureTitle() {
         companyTitle.textColor = UIColor(named: "labelColor")
+        companyTitle.font = UIFont.systemFont(ofSize: 18)
         companyTitle.numberOfLines = 2
         companyTitle.textAlignment = .center
 //        companyTitle.adjustsFontSizeToFitWidth = true

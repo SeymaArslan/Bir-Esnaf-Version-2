@@ -14,8 +14,8 @@ class HomePageViewController: UITabBarController {
         super.viewDidLoad()
         self.setupTabs()
 
-        self.tabBar.tintColor = UIColor(named: "customColor")
-        self.navigationItem.titleView?.tintColor = UIColor(named: "customColor2") // olmadı
+        self.tabBar.tintColor = UIColor(named: Colors.orange)
+        self.navigationItem.titleView?.tintColor = UIColor(named: Colors.blue) // olmadı
     }
     
     
@@ -35,7 +35,7 @@ class HomePageViewController: UITabBarController {
         nav.tabBarItem.image = image
         
         nav.viewControllers.first?.navigationItem.title = title
-        nav.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(named: "customColor2")!]
+        nav.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(named: Colors.blue)!]
         return nav
     }
 
