@@ -3,7 +3,7 @@
 //  Bir Esnaf MVVM
 //
 //  Created by Seyma Arslan on 16.04.2024.
-//
+//   Sayfa geçişi               ----- ??? ***** ----- 
 
 import UIKit
 import SnapKit
@@ -31,7 +31,8 @@ class ProductViewController: UIViewController {
     }
     
     @objc func addButtonTap() {
-        print("Add button tapped")
+        let addProdVC = AddProductViewController()
+        present(addProdVC, animated: true)
     }
     
     

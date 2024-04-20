@@ -10,7 +10,7 @@ import SnapKit
 
 class SettingViewController: UIViewController {
     
-    //MARK: - Create Buttons UI
+    //MARK: - Create UI
     private let backgroundImage: UIImageView = {
        let imageView = UIImageView()
         imageView.image = UIImage(named: "background")
