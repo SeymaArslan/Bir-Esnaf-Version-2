@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F25D4D02BD44494001B5996 /* UpdateProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25D4CF2BD44494001B5996 /* UpdateProductViewController.swift */; };
+		1F25D4D22BD44AF6001B5996 /* CompanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25D4D12BD44AF6001B5996 /* CompanyDetailViewController.swift */; };
+		1F25D4D42BD44B15001B5996 /* AddCompInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25D4D32BD44B15001B5996 /* AddCompInfoViewController.swift */; };
+		1F25D4D62BD44B26001B5996 /* AddCompAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25D4D52BD44B26001B5996 /* AddCompAddressViewController.swift */; };
+		1F25D4D82BD44B34001B5996 /* AddCompBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25D4D72BD44B34001B5996 /* AddCompBankViewController.swift */; };
+		1F25D4DB2BD44B64001B5996 /* UpdateCompInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25D4DA2BD44B64001B5996 /* UpdateCompInfoViewController.swift */; };
+		1F25D4DD2BD44B70001B5996 /* UpdateCompAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25D4DC2BD44B70001B5996 /* UpdateCompAddressViewController.swift */; };
+		1F25D4DF2BD44B7D001B5996 /* UpdateCompBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25D4DE2BD44B7D001B5996 /* UpdateCompBankViewController.swift */; };
 		1F3BE4512BCD1818009D8C35 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4502BCD1818009D8C35 /* LoginPageViewController.swift */; };
 		1F3BE4532BCD1854009D8C35 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4522BCD1854009D8C35 /* HomePageViewController.swift */; };
 		1F3BE4642BCD1FB5009D8C35 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */; };
@@ -29,6 +37,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F25D4CF2BD44494001B5996 /* UpdateProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProductViewController.swift; sourceTree = "<group>"; };
+		1F25D4D12BD44AF6001B5996 /* CompanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailViewController.swift; sourceTree = "<group>"; };
+		1F25D4D32BD44B15001B5996 /* AddCompInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompInfoViewController.swift; sourceTree = "<group>"; };
+		1F25D4D52BD44B26001B5996 /* AddCompAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompAddressViewController.swift; sourceTree = "<group>"; };
+		1F25D4D72BD44B34001B5996 /* AddCompBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompBankViewController.swift; sourceTree = "<group>"; };
+		1F25D4DA2BD44B64001B5996 /* UpdateCompInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCompInfoViewController.swift; sourceTree = "<group>"; };
+		1F25D4DC2BD44B70001B5996 /* UpdateCompAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCompAddressViewController.swift; sourceTree = "<group>"; };
+		1F25D4DE2BD44B7D001B5996 /* UpdateCompBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCompBankViewController.swift; sourceTree = "<group>"; };
 		1F3BE4502BCD1818009D8C35 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		1F3BE4522BCD1854009D8C35 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +82,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F25D4D92BD44B3B001B5996 /* AddCompany */ = {
+			isa = PBXGroup;
+			children = (
+				1F25D4D32BD44B15001B5996 /* AddCompInfoViewController.swift */,
+				1F25D4D52BD44B26001B5996 /* AddCompAddressViewController.swift */,
+				1F25D4D72BD44B34001B5996 /* AddCompBankViewController.swift */,
+			);
+			name = AddCompany;
+			sourceTree = "<group>";
+		};
+		1F25D4E02BD44B92001B5996 /* UpdateCompany */ = {
+			isa = PBXGroup;
+			children = (
+				1F25D4DA2BD44B64001B5996 /* UpdateCompInfoViewController.swift */,
+				1F25D4DC2BD44B70001B5996 /* UpdateCompAddressViewController.swift */,
+				1F25D4DE2BD44B7D001B5996 /* UpdateCompBankViewController.swift */,
+			);
+			name = UpdateCompany;
+			sourceTree = "<group>";
+		};
 		1F3BE4462BCD008F009D8C35 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +212,7 @@
 				1F7436982BCE992B00D9F813 /* ProductViewController.swift */,
 				1F74369D2BCE9D2C00D9F813 /* ProductTableViewCell.swift */,
 				1F7D2B332BD2A26800E86A5E /* AddProductViewController.swift */,
+				1F25D4CF2BD44494001B5996 /* UpdateProductViewController.swift */,
 			);
 			name = Product;
 			sourceTree = "<group>";
@@ -185,6 +222,9 @@
 			children = (
 				1F74369A2BCE9C6300D9F813 /* CompanyViewController.swift */,
 				1FB7EA3D2BD14EF300C0F61E /* CompanyTableViewCell.swift */,
+				1F25D4D12BD44AF6001B5996 /* CompanyDetailViewController.swift */,
+				1F25D4D92BD44B3B001B5996 /* AddCompany */,
+				1F25D4E02BD44B92001B5996 /* UpdateCompany */,
 			);
 			name = Company;
 			sourceTree = "<group>";
@@ -326,10 +366,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F25D4D22BD44AF6001B5996 /* CompanyDetailViewController.swift in Sources */,
+				1F25D4DD2BD44B70001B5996 /* UpdateCompAddressViewController.swift in Sources */,
 				1F64FEB52BCC66B300B96BB3 /* ViewController.swift in Sources */,
 				1F3BE4642BCD1FB5009D8C35 /* ShopViewController.swift in Sources */,
 				1F7D2B342BD2A26800E86A5E /* AddProductViewController.swift in Sources */,
 				1F64FEB12BCC66B300B96BB3 /* AppDelegate.swift in Sources */,
+				1F25D4D82BD44B34001B5996 /* AddCompBankViewController.swift in Sources */,
 				1F3BE4512BCD1818009D8C35 /* LoginPageViewController.swift in Sources */,
 				1F74369E2BCE9D2C00D9F813 /* ProductTableViewCell.swift in Sources */,
 				1F7436A02BCEB96800D9F813 /* Product.swift in Sources */,
@@ -338,9 +381,14 @@
 				1F3BE4662BCD5CE8009D8C35 /* SettingViewController.swift in Sources */,
 				1F3BE4532BCD1854009D8C35 /* HomePageViewController.swift in Sources */,
 				1F7436992BCE992B00D9F813 /* ProductViewController.swift in Sources */,
+				1F25D4DB2BD44B64001B5996 /* UpdateCompInfoViewController.swift in Sources */,
 				1F7D2B322BD29DA600E86A5E /* Constants.swift in Sources */,
+				1F25D4D02BD44494001B5996 /* UpdateProductViewController.swift in Sources */,
+				1F25D4D62BD44B26001B5996 /* AddCompAddressViewController.swift in Sources */,
 				1F7436A22BCEB9E600D9F813 /* Company.swift in Sources */,
 				1F64FEB32BCC66B300B96BB3 /* SceneDelegate.swift in Sources */,
+				1F25D4D42BD44B15001B5996 /* AddCompInfoViewController.swift in Sources */,
+				1F25D4DF2BD44B7D001B5996 /* UpdateCompBankViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

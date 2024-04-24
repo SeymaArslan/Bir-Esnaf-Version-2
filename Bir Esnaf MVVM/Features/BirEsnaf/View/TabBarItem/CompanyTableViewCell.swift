@@ -30,7 +30,7 @@ class CompanyTableViewCell: UITableViewCell {
     }
     
     func configureTitle() {
-        companyTitle.textColor = UIColor(named: "labelColor")
+        companyTitle.textColor = UIColor(named: Colors.label)
         companyTitle.font = UIFont.systemFont(ofSize: 18)
         companyTitle.numberOfLines = 2
         companyTitle.textAlignment = .center

@@ -72,13 +72,20 @@ extension CompanyViewController: UITableViewDelegate, UITableViewDataSource {
         cell.set(company: company)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCompany = companies[indexPath.row]
+        let compDetail = CompanyDetailViewController()
+        compDetail.selectedCompany = selectedCompany
+        present(compDetail, animated: true)
+    }
 }
 
 
 extension CompanyViewController {
     func fetchData() -> [Company] {
-        let data = Company(cId: "1", userMail: "@mail", compName: "Firma1Firma1Firma1Firma1Firma1Firma1Firma1Firma1Firma1Firma1Firma1Firma1", compPhone: "05745867", compMail: "@firma", province: "Ankara", district: "Çankaya", quarter: "Koru", asbn: "Yeşiltepe Evleri", bankName: "YapıKredi", bankBranchName: "Bahçelievler", bankBranchCode: "34234", bankAccountType: "Try", bankAccountName: "Firma1", bankAccountNum: "2342352", bankIban: "TR00 0000 0000 0000", count: "Firma1")
-        let data2 = Company(cId: "2", userMail: "@mail", compName: "Firma2", compPhone: "453453625", compMail: "@firma2mail", province: "Bursa", district: "Osmangazi", quarter: "Atatürk", asbn: "Paşa Mahallesi", bankName: "Garanti", bankBranchName: "Osmangazi", bankBranchCode: "34234", bankAccountType: "Try", bankAccountName: "Firma2", bankAccountNum: "2345234", bankIban: "TR00 0000 0000 0000", count: "Firma2")
+        let data = Company(cId: "1", userMail: "@mail", compName: "Firma1", compPhone: "05745867", compMail: "@firma", province: "Ankara", district: "Çankaya", quarter: "Koru", asbn: "Yeşiltepe Evleri", bankName: "YapıKredi", bankBranchName: "Bahçelievler", bankBranchCode: "34234", bankAccountType: "Try", bankAccountName: "Firma1", bankAccountNum: "2342352", bankIban: "TR00 0000 0000 0000", count: "Firma1")
+        let data2 = Company(cId: "2", userMail: "@mail", compName: "Firma2", compPhone: "453453625", compMail: "@firma2mail", province: "Bursa", district: "OsmangaziOsmangaziOsmangaziOsmangazi", quarter: "Atatürk", asbn: "Paşa Mahallesi", bankName: "Garanti", bankBranchName: "Osmangazi", bankBranchCode: "34234", bankAccountType: "Try", bankAccountName: "Firma2", bankAccountNum: "2345234", bankIban: "TR00 0000 0000 0000", count: "Firma2")
         
         return [data, data2]
     }

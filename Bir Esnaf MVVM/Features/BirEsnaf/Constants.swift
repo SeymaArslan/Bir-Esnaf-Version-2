@@ -21,3 +21,4 @@ struct Images {
     static let logo = "logo"
     static let logoCalculate = "logo2"
 }
+

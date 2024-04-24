@@ -20,7 +20,7 @@ class SettingViewController: UIViewController {
     
     private let contentView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(white: 1, alpha: 0.1)
+        view.backgroundColor = UIColor(white: 1, alpha: 0)
         return view
     }()
     

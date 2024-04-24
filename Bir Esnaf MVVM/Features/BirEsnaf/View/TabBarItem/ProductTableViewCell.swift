@@ -17,11 +17,6 @@ class ProductTableViewCell: UITableViewCell {
     var amountTitle = UILabel()
     var amount = UILabel()
 
-    struct Color {
-        static let labelColor = "labelColor2"
-        static let viewColor = "customColor2"
-    }
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
   
@@ -53,7 +48,7 @@ class ProductTableViewCell: UITableViewCell {
     }
     
     func configureProdTitle() {
-        productTitle.textColor = UIColor(named: Color.labelColor)
+        productTitle.textColor = UIColor(named: Colors.label)
         productTitle.numberOfLines = 0
         productTitle.adjustsFontSizeToFitWidth = true
         productTitle.font = UIFont.systemFont(ofSize: 18, weight: .medium)
@@ -65,7 +60,7 @@ class ProductTableViewCell: UITableViewCell {
     }
     
     func configureView() {
-        view.backgroundColor = UIColor(named: Color.viewColor)
+        view.backgroundColor = UIColor(named: Colors.blue)
         view.snp.makeConstraints { make in
             make.top.equalTo(45)
             make.leading.equalTo(10)
@@ -76,14 +71,14 @@ class ProductTableViewCell: UITableViewCell {
     
     
     func configureCost() {
-        costTitle.textColor = UIColor(named: Color.labelColor)
+        costTitle.textColor = UIColor(named: Colors.label)
         costTitle.font = UIFont.systemFont(ofSize: 16, weight: .light)
         costTitle.snp.makeConstraints { make in
             make.top.equalTo(60)
             make.leading.equalTo(17)
         }
         
-        cost.textColor = UIColor(named: Color.labelColor)
+        cost.textColor = UIColor(named: Colors.label)
         cost.font = UIFont.systemFont(ofSize: 16, weight: .light)
         cost.snp.makeConstraints { make in
 //            make.top.equalTo(25)    // özel bir şey yaparsan kullan eşit olmasını istemediğinde mesela..
@@ -94,14 +89,14 @@ class ProductTableViewCell: UITableViewCell {
     }
     
     func configureAmount() {
-        amountTitle.textColor = UIColor(named: Color.labelColor)
+        amountTitle.textColor = UIColor(named: Colors.label)
         amountTitle.font = UIFont.systemFont(ofSize: 16, weight: .light)
         amountTitle.snp.makeConstraints { make in
             make.top.equalTo(85)
             make.leading.equalTo(17)
         }
         
-        amount.textColor = UIColor(named: Color.labelColor)
+        amount.textColor = UIColor(named: Colors.label)
         amount.font = UIFont.systemFont(ofSize: 16, weight: .light)
         amount.snp.makeConstraints { make in
             make.leading.equalTo(amountTitle.snp.trailing).offset(10)

@@ -3,13 +3,13 @@
 //  Bir Esnaf MVVM
 //
 //  Created by Seyma Arslan on 16.04.2024.
-//   Sayfa geçişi               ----- ??? ***** ----- 
+//
 
 import UIKit
 import SnapKit
 
 class ProductViewController: UIViewController {
-
+    
     var tableView = UITableView()
     var products: [Product] = []
     
@@ -70,6 +70,13 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
         let product = products[indexPath.row]
         cell.set(product: product)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedProduct = products[indexPath.row]
+        let updateProd = UpdateProductViewController()
+        updateProd.selectedProduct = selectedProduct
+        present(updateProd, animated: true)
     }
 }
 

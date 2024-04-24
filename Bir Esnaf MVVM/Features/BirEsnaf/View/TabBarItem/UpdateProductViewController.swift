@@ -1,14 +1,15 @@
 //
-//  AddProductViewController.swift
+//  UpdateProductViewController.swift
 //  Bir Esnaf MVVM
 //
-//  Created by Seyma Arslan on 19.04.2024.
+//  Created by Seyma Arslan on 20.04.2024.
 //
 
 import UIKit
-import SnapKit
 
-class AddProductViewController: UIViewController, UITextFieldDelegate {
+class UpdateProductViewController: UIViewController {
+
+    var selectedProduct: Product?
     
     //MARK: - Create UI
     private let backgroundImage: UIImageView = {
@@ -65,9 +66,9 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
         return textField
     }()
     
-    private let saveButton: UIButton = {
+    private let updateButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Save", for: .normal)
+        button.setTitle("Update", for: .normal)
         button.setTitleColor(UIColor(named: Colors.blue), for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         button.addTarget(self, action: #selector(saveButtonPressed), for: .touchUpInside)
@@ -83,13 +84,13 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
         return button
     }()
     
-    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         configuration()
     }
     
+
     @objc func cancelButtonTapped() {
         dismiss(animated: true, completion: nil)
     }
@@ -105,16 +106,17 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
         view.addSubview(costTextField)
         view.addSubview(amountTitleLabel)
         view.addSubview(amountTextField)
-        view.addSubview(saveButton)
+        view.addSubview(updateButton)
         view.addSubview(closeButton)
         
         prodNameLabel.text = "Product Name"
         costTitleLabel.text = "Cost"
         amountTitleLabel.text = "Amount"
         
-        prodNameTextField.placeholder = "Product Name"
-        costTextField.placeholder = "0 ₺"
-        amountTextField.placeholder = "0 Pieces/Kg"
+        prodNameTextField.placeholder = selectedProduct?.prodName
+        costTextField.placeholder = selectedProduct?.prodPrice
+        amountTextField.placeholder = selectedProduct?.prodTotal
+        
         
         backgroundImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -159,11 +161,11 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
             make.leading.equalTo(21)
         }
         
-        saveButton.snp.makeConstraints { make in
+        updateButton.snp.makeConstraints { make in
             make.top.equalTo(amountTextField.snp.bottom).offset(120)
             make.centerX.equalToSuperview()
+            
         }
-        
     }
     
     
@@ -172,7 +174,5 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
         print("saveButtonPressed")
     }
     
+
 }
-
-
-//MARK: - Extensions
