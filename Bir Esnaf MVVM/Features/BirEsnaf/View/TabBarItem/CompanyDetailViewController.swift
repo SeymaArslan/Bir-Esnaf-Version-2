@@ -26,15 +26,6 @@ class CompanyDetailViewController: UIViewController {
         return view
     }()
     
-    private let closeButton: UIButton = {
-        let button = UIButton()
-        let image = UIImage(systemName: "xmark")?.withRenderingMode(.alwaysTemplate)
-        button.setImage(image, for: .normal)
-        button.tintColor = UIColor(named: Colors.blue)
-        button.addTarget(self, action: #selector(cancelButtonTapped), for: .touchUpInside)
-        return button
-    }()
-    
     private let compNameTitle: UILabel = {
         let label = UILabel()
         label.textColor = UIColor(named: Colors.label)
@@ -146,6 +137,8 @@ class CompanyDetailViewController: UIViewController {
         let label = UILabel()
         label.textColor = UIColor(named: Colors.label)
         label.font = UIFont.systemFont(ofSize: 16)
+        label.numberOfLines = 2
+        label.textAlignment = .left
         return label
     }()
     
@@ -226,17 +219,31 @@ class CompanyDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureLeftBarButton()
         configuration()
     }
     
     
     //MARK: - Button Actions
-    @objc func cancelButtonTapped() {
-        dismiss(animated: true, completion: nil)
-    }
-    
     @objc func updateButtonPressed() {
         print("updateButtonPressed")
+        let updateCompInfo = UpdateCompInfoViewController()
+        updateCompInfo.selectedCompany = selectedCompany
+        updateCompInfo.modalPresentationStyle = .fullScreen
+        present(updateCompInfo, animated: true, completion: nil)
+    }
+    
+    
+    //MARK: - Helpers
+    @objc func backButtonPressed() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    private func configureLeftBarButton() {
+        navigationItem.hidesBackButton = false
+        navigationItem.title = "Company"
+        self.navigationItem.leftBarButtonItems = [UIBarButtonItem(image: UIImage(systemName: "arrow.left"), style: .plain, target: self, action: #selector(self.backButtonPressed))]
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "customColor2")
     }
     
     
@@ -253,13 +260,8 @@ class CompanyDetailViewController: UIViewController {
             make.edges.equalToSuperview()
         }
         
-        closeButton.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(40)
-            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
-        }
-        
         compNameTitle.snp.makeConstraints { make in
-            make.top.equalTo(80)
+            make.top.equalTo(110)
             make.leading.equalTo(16)
             make.width.equalTo(130)
         }
@@ -271,7 +273,7 @@ class CompanyDetailViewController: UIViewController {
         }
         
         phoneTitle.snp.makeConstraints { make in
-            make.top.equalTo(125)
+            make.top.equalTo(155)
             make.leading.equalTo(17)
         }
         
@@ -283,7 +285,7 @@ class CompanyDetailViewController: UIViewController {
         }
         
         mailTitle.snp.makeConstraints { make in
-            make.top.equalTo(155)
+            make.top.equalTo(185)
             make.leading.equalTo(17)
         }
         
@@ -302,7 +304,7 @@ class CompanyDetailViewController: UIViewController {
         }
         
         addressTitle.snp.makeConstraints { make in
-            make.top.equalTo(250)
+            make.top.equalTo(280)
             make.leading.equalTo(17)
             //make.centerX.equalTo(separatingViewMA.snp.bottom)  // test et
             //make.centerX.equalTo(separateingViewAB.snp.top)
@@ -323,12 +325,12 @@ class CompanyDetailViewController: UIViewController {
         }
         
         bankInfoTitle.snp.makeConstraints { make in
-            make.top.equalTo(350)
+            make.top.equalTo(380)
             make.leading.equalTo(16)
         }
         
         bankNameTitle.snp.makeConstraints { make in
-            make.top.equalTo(380)
+            make.top.equalTo(415)
             make.leading.equalTo(17)
         }
         
@@ -340,7 +342,7 @@ class CompanyDetailViewController: UIViewController {
         }
         
         ibanTitle.snp.makeConstraints { make in
-            make.top.equalTo(410)
+            make.top.equalTo(455)
             make.leading.equalTo(16)
         }
         
@@ -352,7 +354,7 @@ class CompanyDetailViewController: UIViewController {
         }
         
         accountNumberTitle.snp.makeConstraints { make in
-            make.top.equalTo(440)
+            make.top.equalTo(495)
             make.leading.equalTo(16)
         }
         
@@ -364,7 +366,7 @@ class CompanyDetailViewController: UIViewController {
         }
         
         accountNameTitle.snp.makeConstraints { make in
-            make.top.equalTo(470)
+            make.top.equalTo(525)
             make.leading.equalTo(16)
         }
         
@@ -376,7 +378,7 @@ class CompanyDetailViewController: UIViewController {
         }
         
         branchCodeTitle.snp.makeConstraints { make in
-            make.top.equalTo(500)
+            make.top.equalTo(555)
             make.leading.equalTo(16)
         }
         
@@ -388,7 +390,7 @@ class CompanyDetailViewController: UIViewController {
         }
         
         branchNameTitle.snp.makeConstraints { make in
-            make.top.equalTo(530)
+            make.top.equalTo(585)
             make.leading.equalTo(16)
         }
         
@@ -400,7 +402,7 @@ class CompanyDetailViewController: UIViewController {
         }
         
         updateButton.snp.makeConstraints { make in
-            make.top.equalTo(branchNameTitle.snp.bottom).offset(120)
+            make.top.equalTo(branchNameTitle.snp.bottom).offset(85)
             make.centerX.equalToSuperview()
             make.width.equalTo(113)
             make.height.equalTo(35)
@@ -412,7 +414,6 @@ class CompanyDetailViewController: UIViewController {
     func addSubview() {
         view.addSubview(backgroundImage)
         view.addSubview(contentView)
-        view.addSubview(closeButton)
         view.addSubview(compNameTitle)
         view.addSubview(compName)
         view.addSubview(phoneTitle)
@@ -444,7 +445,7 @@ class CompanyDetailViewController: UIViewController {
             compName.text = comp.compName
             phone.text = comp.compPhone
             mail.text = comp.compMail
-            address.text = comp.quarter + " " + comp.asbn + " " + comp.district + " " + comp.province
+            address.text = comp.asbn + " " + comp.district + " " + comp.province
             bankName.text = comp.bankName
             iban.text = comp.bankIban
             accountNumber.text = comp.bankAccountNum

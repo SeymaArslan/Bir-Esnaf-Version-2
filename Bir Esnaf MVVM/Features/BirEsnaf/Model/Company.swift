@@ -19,7 +19,6 @@ struct Company {
     let compMail: String
     let province: String   // il
     let district: String  // ilce
-    let quarter: String // mahalle
     let asbn: String // avenue/street/building/number
     let bankName: String
     let bankBranchName: String

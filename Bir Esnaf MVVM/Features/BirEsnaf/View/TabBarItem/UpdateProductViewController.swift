@@ -35,6 +35,7 @@ class UpdateProductViewController: UIViewController {
     private let prodNameTextField: UITextField = {
         let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
+        textField.placeholder = "Product Name"
         return textField
     }()
     
@@ -49,6 +50,7 @@ class UpdateProductViewController: UIViewController {
         let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
         textField.keyboardType = .decimalPad
+        textField.placeholder = "Cost"
         return textField
     }()
     
@@ -63,6 +65,7 @@ class UpdateProductViewController: UIViewController {
         let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
         textField.keyboardType = .decimalPad
+        textField.placeholder = "Amount"
         return textField
     }()
     
@@ -90,6 +93,10 @@ class UpdateProductViewController: UIViewController {
         configuration()
     }
     
+    //MARK: - Button Actions
+    @objc func saveButtonPressed() {
+        print("saveButtonPressed")
+    }
 
     @objc func cancelButtonTapped() {
         dismiss(animated: true, completion: nil)
@@ -98,16 +105,7 @@ class UpdateProductViewController: UIViewController {
     
     //MARK: - Snapkit Func
     func configuration() {
-        view.addSubview(backgroundImage)
-        view.addSubview(contentView)
-        view.addSubview(prodNameLabel)
-        view.addSubview(prodNameTextField)
-        view.addSubview(costTitleLabel)
-        view.addSubview(costTextField)
-        view.addSubview(amountTitleLabel)
-        view.addSubview(amountTextField)
-        view.addSubview(updateButton)
-        view.addSubview(closeButton)
+        addSubview()
         
         prodNameLabel.text = "Product Name"
         costTitleLabel.text = "Cost"
@@ -167,12 +165,18 @@ class UpdateProductViewController: UIViewController {
             
         }
     }
-    
-    
-    //MARK: - Button Actions
-    @objc func saveButtonPressed() {
-        print("saveButtonPressed")
-    }
-    
 
+    
+    func addSubview() {
+        view.addSubview(backgroundImage)
+        view.addSubview(contentView)
+        view.addSubview(prodNameLabel)
+        view.addSubview(prodNameTextField)
+        view.addSubview(costTitleLabel)
+        view.addSubview(costTextField)
+        view.addSubview(amountTitleLabel)
+        view.addSubview(amountTextField)
+        view.addSubview(updateButton)
+        view.addSubview(closeButton)
+    }
 }
