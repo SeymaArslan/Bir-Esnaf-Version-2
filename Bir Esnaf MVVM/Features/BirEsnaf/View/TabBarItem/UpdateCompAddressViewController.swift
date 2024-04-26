@@ -59,7 +59,7 @@ class UpdateCompAddressViewController: UIViewController {
         let label = UILabel()
         label.textColor = UIColor(named: Colors.blue)
         label.font = UIFont.systemFont(ofSize: 16)
-        label.text = "Avenue/Neighborhood/Street/No"
+        label.text = "Avenue/Street/Building/Number"
         return label
     }()
     
@@ -67,13 +67,14 @@ class UpdateCompAddressViewController: UIViewController {
         let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
         textField.keyboardType = .default
-        textField.placeholder = "Avenue/Neighborhood/Street/No"
+        textField.borderStyle = .roundedRect
+        textField.placeholder = "Avenue/Street/Building/Number"
         return textField
     }()
     
     private let nextButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Update", for: .normal)
+        button.setTitle("Next", for: .normal)
         button.setTitleColor(UIColor(named: Colors.blue), for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         button.addTarget(self, action: #selector(nextButtonPressed), for: .touchUpInside)
@@ -94,6 +95,7 @@ class UpdateCompAddressViewController: UIViewController {
         
         addDelegate()
         configuration()
+        fetchData()
     }
     
     
@@ -109,7 +111,11 @@ class UpdateCompAddressViewController: UIViewController {
     
     //MARK: - Actions
     @objc func nextButtonPressed() {
-        
+        print("nextButtonPressed")
+        let updateBank = UpdateCompBankViewController()
+        updateBank.selectedCompany = selectedCompany
+        updateBank.modalPresentationStyle = .fullScreen
+        present(updateBank, animated: true, completion: nil)
     }
     
     @objc func cancelButtonTapped() {
@@ -162,6 +168,8 @@ class UpdateCompAddressViewController: UIViewController {
         ASBNTextField.snp.makeConstraints { make in
             make.top.equalTo(ASBNTitle.snp.bottom).offset(11)
             make.leading.equalTo(21)
+            make.width.equalTo(355)
+            make.height.equalTo(34)
         }
         
         nextButton.snp.makeConstraints { make in
@@ -185,9 +193,10 @@ class UpdateCompAddressViewController: UIViewController {
     
     
     //MARK: - Helpers
-    func fillData() {
-
-        // fill ASBN
+    func fetchData() {
+        if let comp = selectedCompany {
+            ASBNTextField.text = comp.asbn
+        }
     }
     
 }

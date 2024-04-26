@@ -133,8 +133,8 @@ extension CompanyViewController: UITableViewDelegate, UITableViewDataSource, UIS
 
 extension CompanyViewController {
     func fetchData() -> [Company] {
-        let data = Company(cId: "1", userMail: "@mail", compName: "Firma1", compPhone: "05745867", compMail: "@firma", province: "Ankara", district: "Çankaya", asbn: "Yeşiltepe Evleri", bankName: "YapıKredi", bankBranchName: "Bahçelievler", bankBranchCode: "34234", bankAccountType: "Try", bankAccountName: "Firma1", bankAccountNum: "2342352", bankIban: "TR00 0000 0000 0000 0000 0000 00", count: "Firma1")
-        let data2 = Company(cId: "2", userMail: "@mail", compName: "Firma2", compPhone: "453453625", compMail: "@firma2mail", province: "Bursa", district: "OsmangaziOsmangaziOsmangaziOsmangazi", asbn: "Paşa Mahallesi", bankName: "Garanti", bankBranchName: "Osmangazi", bankBranchCode: "34234", bankAccountType: "Try", bankAccountName: "Firma2", bankAccountNum: "2345234", bankIban: "TR00 0000 0000 0000 0000 0000 00", count: "Firma2")
+        let data = Company(cId: "1", userMail: "@mail", compName: "Firma1", compPhone: "05745867", compMail: "@firma", province: "Ankara", district: "Çankaya", asbn: "Koru Mahallesi Yeşiltepe Evleri No: 23", bankName: "YapıKredi", bankBranchName: "Bahçelievler", bankBranchCode: "34234", bankAccountType: "Try", bankAccountName: "Firma1", bankAccountNum: "2342352", bankIban: "TR00 0000 0000 0000 0000 0000 00", count: "Firma1")
+        let data2 = Company(cId: "2", userMail: "@mail", compName: "Firma2", compPhone: "453453625", compMail: "@firma2mail", province: "Bursa", district: "Osmangazi", asbn: "Paşa Mahallesi No: 22", bankName: "Garanti", bankBranchName: "Osmangazi", bankBranchCode: "34234", bankAccountType: "Try", bankAccountName: "Firma2", bankAccountNum: "2345234", bankIban: "TR00 0000 0000 0000 0000 0000 00", count: "Firma2")
         
         return [data, data2]
     }

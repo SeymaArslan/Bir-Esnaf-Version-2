@@ -38,6 +38,7 @@ class UpdateCompInfoViewController: UIViewController {
         let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "Company Name"
+        textField.borderStyle = .roundedRect
         return textField
     }()
     
@@ -54,6 +55,7 @@ class UpdateCompInfoViewController: UIViewController {
         textField.textColor = UIColor(named: Colors.label)
         textField.keyboardType = .numberPad
         textField.placeholder = "Phone"
+        textField.borderStyle = .roundedRect
         return textField
     }()
     
@@ -70,6 +72,7 @@ class UpdateCompInfoViewController: UIViewController {
         textField.textColor = UIColor(named: Colors.label)
         textField.keyboardType = .emailAddress
         textField.placeholder = "Email"
+        textField.borderStyle = .roundedRect
         return textField
     }()
     
@@ -105,7 +108,7 @@ class UpdateCompInfoViewController: UIViewController {
     @objc func nextButtonPressed() {
         print("nextButtonPressed")
         let updateCompAddress = UpdateCompAddressViewController()
-        updateCompAddress.selectedCompany = selectedCompany  // or entered values
+        updateCompAddress.selectedCompany = selectedCompany 
         updateCompAddress.modalPresentationStyle = .fullScreen
         present(updateCompAddress, animated: true, completion: nil)
     }
@@ -138,6 +141,8 @@ class UpdateCompInfoViewController: UIViewController {
         compNameTextField.snp.makeConstraints { make in
             make.top.equalTo(compNameLabel.snp.bottom).offset(11)
             make.leading.equalTo(21)
+            make.width.equalTo(355)
+            make.height.equalTo(34)
         }
         
         phoneTitleLabel.snp.makeConstraints { make in
@@ -148,6 +153,8 @@ class UpdateCompInfoViewController: UIViewController {
         phoneTextField.snp.makeConstraints { make in
             make.top.equalTo(phoneTitleLabel.snp.bottom).offset(11)
             make.leading.equalTo(21)
+            make.width.equalTo(355)
+            make.height.equalTo(34)
         }
         
         mailTitleLabel.snp.makeConstraints { make in
@@ -158,6 +165,8 @@ class UpdateCompInfoViewController: UIViewController {
         mailTextField.snp.makeConstraints { make in
             make.top.equalTo(mailTitleLabel.snp.bottom).offset(11)
             make.leading.equalTo(21)
+            make.width.equalTo(355)
+            make.height.equalTo(34)
         }
         
         nextButton.snp.makeConstraints { make in
@@ -182,9 +191,11 @@ class UpdateCompInfoViewController: UIViewController {
     
     //MARK: - Helpers
     func fillData() {
-        compNameTextField.text = selectedCompany?.compName
-        phoneTextField.text = selectedCompany?.compPhone
-        mailTextField.text = selectedCompany?.compMail
+        if let comp = selectedCompany {
+            compNameTextField.text = comp.compName
+            phoneTextField.text = comp.compPhone
+            mailTextField.text = comp.compPhone
+        }
     }
 
 }

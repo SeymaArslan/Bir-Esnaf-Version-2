@@ -36,6 +36,7 @@ class UpdateProductViewController: UIViewController {
         let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "Product Name"
+        textField.borderStyle = .roundedRect
         return textField
     }()
     
@@ -51,6 +52,7 @@ class UpdateProductViewController: UIViewController {
         textField.textColor = UIColor(named: Colors.label)
         textField.keyboardType = .decimalPad
         textField.placeholder = "Cost"
+        textField.borderStyle = .roundedRect
         return textField
     }()
     
@@ -66,6 +68,7 @@ class UpdateProductViewController: UIViewController {
         textField.textColor = UIColor(named: Colors.label)
         textField.keyboardType = .decimalPad
         textField.placeholder = "Amount"
+        textField.borderStyle = .roundedRect
         return textField
     }()
     
@@ -137,6 +140,8 @@ class UpdateProductViewController: UIViewController {
         prodNameTextField.snp.makeConstraints { make in
             make.top.equalTo(prodNameLabel.snp.bottom).offset(11)
             make.leading.equalTo(21)
+            make.width.equalTo(355)
+            make.height.equalTo(34)
         }
         
         costTitleLabel.snp.makeConstraints { make in
@@ -147,6 +152,8 @@ class UpdateProductViewController: UIViewController {
         costTextField.snp.makeConstraints { make in
             make.top.equalTo(costTitleLabel.snp.bottom).offset(11)
             make.leading.equalTo(21)
+            make.width.equalTo(355)
+            make.height.equalTo(34)
         }
         
         amountTitleLabel.snp.makeConstraints { make in
@@ -157,6 +164,8 @@ class UpdateProductViewController: UIViewController {
         amountTextField.snp.makeConstraints { make in
             make.top.equalTo(amountTitleLabel.snp.bottom).offset(11)
             make.leading.equalTo(21)
+            make.width.equalTo(355)
+            make.height.equalTo(34)
         }
         
         updateButton.snp.makeConstraints { make in

@@ -34,6 +34,7 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
     private let prodNameTextField: UITextField = {
         let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
+        textField.borderStyle = .roundedRect
         return textField
     }()
     
@@ -48,6 +49,7 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
         let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
         textField.keyboardType = .decimalPad
+        textField.borderStyle = .roundedRect
         return textField
     }()
     
@@ -62,6 +64,7 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
         let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
         textField.keyboardType = .decimalPad
+        textField.borderStyle = .roundedRect
         return textField
     }()
     
@@ -137,6 +140,8 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
         prodNameTextField.snp.makeConstraints { make in
             make.top.equalTo(prodNameLabel.snp.bottom).offset(11)
             make.leading.equalTo(21)
+            make.width.equalTo(355)
+            make.height.equalTo(34)
         }
         
         costTitleLabel.snp.makeConstraints { make in
@@ -147,6 +152,8 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
         costTextField.snp.makeConstraints { make in
             make.top.equalTo(costTitleLabel.snp.bottom).offset(11)
             make.leading.equalTo(21)
+            make.width.equalTo(355)
+            make.height.equalTo(34)
         }
         
         amountTitleLabel.snp.makeConstraints { make in
@@ -157,6 +164,8 @@ class AddProductViewController: UIViewController, UITextFieldDelegate {
         amountTextField.snp.makeConstraints { make in
             make.top.equalTo(amountTitleLabel.snp.bottom).offset(11)
             make.leading.equalTo(21)
+            make.width.equalTo(355)
+            make.height.equalTo(34)
         }
         
         saveButton.snp.makeConstraints { make in
