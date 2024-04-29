@@ -114,9 +114,9 @@ class UpdateProductViewController: UIViewController {
         costTitleLabel.text = "Cost"
         amountTitleLabel.text = "Amount"
         
-        prodNameTextField.placeholder = selectedProduct?.prodName
-        costTextField.placeholder = selectedProduct?.prodPrice
-        amountTextField.placeholder = selectedProduct?.prodTotal
+        prodNameTextField.text = selectedProduct?.prodName
+        costTextField.text = selectedProduct?.prodPrice
+        amountTextField.text = selectedProduct?.prodTotal
         
         
         backgroundImage.snp.makeConstraints { make in

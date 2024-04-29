@@ -71,7 +71,7 @@ class UpdateCompBankViewController: UIViewController {
     private let branchNameTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
-        textField.textColor = UIColor(named: Colors.blue)
+        textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "Bank Branch Name"
         return textField
     }()
@@ -87,7 +87,7 @@ class UpdateCompBankViewController: UIViewController {
     private let branchCodeTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
-        textField.textColor = UIColor(named: Colors.blue)
+        textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "Bank Code"
         return textField
     }()
@@ -103,7 +103,7 @@ class UpdateCompBankViewController: UIViewController {
     private let accountTypeTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
-        textField.textColor = UIColor(named: Colors.blue)
+        textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "Account Type (₺/$)"
         return textField
     }()
@@ -120,7 +120,7 @@ class UpdateCompBankViewController: UIViewController {
     private let accountNameTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
-        textField.textColor = UIColor(named: Colors.blue)
+        textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "Account Name"
         return textField
     }()
@@ -136,7 +136,7 @@ class UpdateCompBankViewController: UIViewController {
     private let accountNumTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
-        textField.textColor = UIColor(named: Colors.blue)
+        textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "Account Number"
         return textField
     }()
@@ -152,7 +152,7 @@ class UpdateCompBankViewController: UIViewController {
     private let ibanTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
-        textField.textColor = UIColor(named: Colors.blue)
+        textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "IBAN"
         return textField
     }()
@@ -317,6 +317,12 @@ class UpdateCompBankViewController: UIViewController {
     func fetchData() {
         if let comp = selectedCompany {
             bankNameTextField.text = comp.bankName
+            branchNameTextField.text = comp.bankBranchName
+            branchCodeTextField.text = comp.bankBranchCode
+            accountTypeTextField.text = comp.bankAccountType
+            accountNameTextField.text = comp.bankAccountName
+            accountNumTextField.text = comp.bankAccountNum
+            ibanTextField.text = comp.bankIban
         }
     }
     

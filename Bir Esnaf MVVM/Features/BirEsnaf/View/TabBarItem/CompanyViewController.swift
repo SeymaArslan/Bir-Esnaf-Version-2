@@ -30,7 +30,9 @@ class CompanyViewController: UIViewController {
     }
     
     @objc func addButtonTap() {
-        print("Add button tapped")
+        let addCompInfo = AddCompInfoViewController()
+        addCompInfo.modalPresentationStyle = .fullScreen
+        present(addCompInfo, animated: true, completion: nil)
     }
 
     
