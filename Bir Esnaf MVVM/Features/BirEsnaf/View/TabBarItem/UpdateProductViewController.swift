@@ -14,7 +14,7 @@ class UpdateProductViewController: UIViewController {
     //MARK: - Create UI
     private let backgroundImage: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "background")
+        imageView.image = UIImage(named: Images.background)
         imageView.contentMode = .scaleToFill
         return imageView
     }()

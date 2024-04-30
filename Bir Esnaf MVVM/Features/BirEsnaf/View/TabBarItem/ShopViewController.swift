@@ -107,15 +107,19 @@ class ShopViewController: UIViewController {
     
     //MARK: - Button Actions
     @objc func purchaseButtonPressed() {
-        print("purchaseButtonPressed")
+        let purchasePage = PurchaseTransactionsViewController()
+        navigationController?.pushViewController(purchasePage, animated: true)
     }
     
     @objc func salesButtonPressed() {
-        print("salesTransactions")
+        let salesPage = SalesTransactionsViewController()
+        navigationController?.pushViewController(salesPage, animated: true)
     }
     
     @objc func saleResultButtonPressed() {
-        print("saleResultButtonPressed")
+        let salesResultPage = SalesResultsViewController()
+        salesResultPage.modalPresentationStyle = .fullScreen
+        present(salesResultPage, animated: true, completion: nil)
     }
     
 }

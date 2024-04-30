@@ -19,6 +19,14 @@
 		1F3BE4532BCD1854009D8C35 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4522BCD1854009D8C35 /* HomePageViewController.swift */; };
 		1F3BE4642BCD1FB5009D8C35 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */; };
 		1F3BE4662BCD5CE8009D8C35 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BE4652BCD5CE8009D8C35 /* SettingViewController.swift */; };
+		1F51CF662BDFB99500E724DB /* PurchaseTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF652BDFB99500E724DB /* PurchaseTransactionsViewController.swift */; };
+		1F51CF682BDFB9AB00E724DB /* SalesTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF672BDFB9AB00E724DB /* SalesTransactionsViewController.swift */; };
+		1F51CF6A2BDFB9B900E724DB /* SalesResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF692BDFB9B900E724DB /* SalesResultsViewController.swift */; };
+		1F51CF6D2BDFBA0000E724DB /* AddSalesResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF6C2BDFBA0000E724DB /* AddSalesResultsViewController.swift */; };
+		1F51CF6F2BDFBA1100E724DB /* UpdateSalesResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF6E2BDFBA1100E724DB /* UpdateSalesResultsViewController.swift */; };
+		1F51CF722BDFBA3600E724DB /* AddPurchaseTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF712BDFBA3600E724DB /* AddPurchaseTransactionsViewController.swift */; };
+		1F51CF742BDFBA4600E724DB /* UpdatePurchaseTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF732BDFBA4600E724DB /* UpdatePurchaseTransactionsViewController.swift */; };
+		1F51CF772BDFBCA500E724DB /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF762BDFBCA500E724DB /* Purchase.swift */; };
 		1F64FEB12BCC66B300B96BB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64FEB02BCC66B300B96BB3 /* AppDelegate.swift */; };
 		1F64FEB32BCC66B300B96BB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64FEB22BCC66B300B96BB3 /* SceneDelegate.swift */; };
 		1F64FEB52BCC66B300B96BB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64FEB42BCC66B300B96BB3 /* ViewController.swift */; };
@@ -33,6 +41,11 @@
 		1F7D2B322BD29DA600E86A5E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D2B312BD29DA600E86A5E /* Constants.swift */; };
 		1F7D2B342BD2A26800E86A5E /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D2B332BD2A26800E86A5E /* AddProductViewController.swift */; };
 		1FB7EA3E2BD14EF300C0F61E /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7EA3D2BD14EF300C0F61E /* CompanyTableViewCell.swift */; };
+		1FDA17EA2BDFBD3600257A29 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA17E92BDFBD3600257A29 /* Sale.swift */; };
+		1FDA17EC2BDFBD5E00257A29 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA17EB2BDFBD5E00257A29 /* Shop.swift */; };
+		1FDA17EE2BDFBD8D00257A29 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA17ED2BDFBD8D00257A29 /* Province.swift */; };
+		1FDA17F02BDFBDA400257A29 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA17EF2BDFBDA400257A29 /* District.swift */; };
+		1FDA17F22BDFD9B000257A29 /* PurchaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA17F12BDFD9B000257A29 /* PurchaseTableViewCell.swift */; };
 		5EF36CE240880B172C009C7A /* Pods_Bir_Esnaf_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE2EA558C666FBE7FAC612 /* Pods_Bir_Esnaf_MVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +62,14 @@
 		1F3BE4522BCD1854009D8C35 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		1F3BE4652BCD5CE8009D8C35 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		1F51CF652BDFB99500E724DB /* PurchaseTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTransactionsViewController.swift; sourceTree = "<group>"; };
+		1F51CF672BDFB9AB00E724DB /* SalesTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTransactionsViewController.swift; sourceTree = "<group>"; };
+		1F51CF692BDFB9B900E724DB /* SalesResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesResultsViewController.swift; sourceTree = "<group>"; };
+		1F51CF6C2BDFBA0000E724DB /* AddSalesResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSalesResultsViewController.swift; sourceTree = "<group>"; };
+		1F51CF6E2BDFBA1100E724DB /* UpdateSalesResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSalesResultsViewController.swift; sourceTree = "<group>"; };
+		1F51CF712BDFBA3600E724DB /* AddPurchaseTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPurchaseTransactionsViewController.swift; sourceTree = "<group>"; };
+		1F51CF732BDFBA4600E724DB /* UpdatePurchaseTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePurchaseTransactionsViewController.swift; sourceTree = "<group>"; };
+		1F51CF762BDFBCA500E724DB /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 		1F64FEAD2BCC66B300B96BB3 /* Bir Esnaf MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bir Esnaf MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F64FEB02BCC66B300B96BB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F64FEB22BCC66B300B96BB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +85,11 @@
 		1F7D2B312BD29DA600E86A5E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1F7D2B332BD2A26800E86A5E /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		1FB7EA3D2BD14EF300C0F61E /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		1FDA17E92BDFBD3600257A29 /* Sale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
+		1FDA17EB2BDFBD5E00257A29 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		1FDA17ED2BDFBD8D00257A29 /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		1FDA17EF2BDFBDA400257A29 /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		1FDA17F12BDFD9B000257A29 /* PurchaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTableViewCell.swift; sourceTree = "<group>"; };
 		9490B79BCA71BA04AD717D4A /* Pods-Bir Esnaf MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf MVVM.debug.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AC870DBA2CAC1D20476D5 /* Pods-Bir Esnaf MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf MVVM.release.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		EFAE2EA558C666FBE7FAC612 /* Pods_Bir_Esnaf_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bir_Esnaf_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,7 +154,6 @@
 				1F3BE44C2BCD0176009D8C35 /* Model */,
 				1F3BE44B2BCD0168009D8C35 /* ViewModel */,
 				1F3BE44A2BCD0161009D8C35 /* View */,
-				1F7D2B312BD29DA600E86A5E /* Constants.swift */,
 			);
 			path = BirEsnaf;
 			sourceTree = "<group>";
@@ -155,6 +180,11 @@
 			children = (
 				1F74369F2BCEB96800D9F813 /* Product.swift */,
 				1F7436A12BCEB9E600D9F813 /* Company.swift */,
+				1F51CF762BDFBCA500E724DB /* Purchase.swift */,
+				1FDA17E92BDFBD3600257A29 /* Sale.swift */,
+				1FDA17EB2BDFBD5E00257A29 /* Shop.swift */,
+				1FDA17ED2BDFBD8D00257A29 /* Province.swift */,
+				1FDA17EF2BDFBDA400257A29 /* District.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,10 +201,43 @@
 			children = (
 				1F7D2B352BD2A27200E86A5E /* Product */,
 				1F7D2B362BD2A31200E86A5E /* Company */,
-				1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */,
+				1F51CF6B2BDFB9C900E724DB /* Shop */,
 				1F3BE4652BCD5CE8009D8C35 /* SettingViewController.swift */,
+				1F7D2B312BD29DA600E86A5E /* Constants.swift */,
 			);
 			path = TabBarItem;
+			sourceTree = "<group>";
+		};
+		1F51CF6B2BDFB9C900E724DB /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				1F3BE4632BCD1FB5009D8C35 /* ShopViewController.swift */,
+				1F51CF752BDFBA5200E724DB /* Purchase */,
+				1F51CF702BDFBA1A00E724DB /* Sales */,
+				1F51CF692BDFB9B900E724DB /* SalesResultsViewController.swift */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
+		1F51CF702BDFBA1A00E724DB /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				1F51CF672BDFB9AB00E724DB /* SalesTransactionsViewController.swift */,
+				1F51CF6E2BDFBA1100E724DB /* UpdateSalesResultsViewController.swift */,
+				1F51CF6C2BDFBA0000E724DB /* AddSalesResultsViewController.swift */,
+			);
+			name = Sales;
+			sourceTree = "<group>";
+		};
+		1F51CF752BDFBA5200E724DB /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				1F51CF652BDFB99500E724DB /* PurchaseTransactionsViewController.swift */,
+				1F51CF732BDFBA4600E724DB /* UpdatePurchaseTransactionsViewController.swift */,
+				1F51CF712BDFBA3600E724DB /* AddPurchaseTransactionsViewController.swift */,
+				1FDA17F12BDFD9B000257A29 /* PurchaseTableViewCell.swift */,
+			);
+			name = Purchase;
 			sourceTree = "<group>";
 		};
 		1F64FEA42BCC66B300B96BB3 = {
@@ -367,26 +430,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F25D4D22BD44AF6001B5996 /* CompanyDetailViewController.swift in Sources */,
+				1F51CF6F2BDFBA1100E724DB /* UpdateSalesResultsViewController.swift in Sources */,
 				1F25D4DD2BD44B70001B5996 /* UpdateCompAddressViewController.swift in Sources */,
+				1FDA17EC2BDFBD5E00257A29 /* Shop.swift in Sources */,
 				1F64FEB52BCC66B300B96BB3 /* ViewController.swift in Sources */,
 				1F3BE4642BCD1FB5009D8C35 /* ShopViewController.swift in Sources */,
 				1F7D2B342BD2A26800E86A5E /* AddProductViewController.swift in Sources */,
 				1F64FEB12BCC66B300B96BB3 /* AppDelegate.swift in Sources */,
 				1F25D4D82BD44B34001B5996 /* AddCompBankViewController.swift in Sources */,
 				1F3BE4512BCD1818009D8C35 /* LoginPageViewController.swift in Sources */,
+				1F51CF772BDFBCA500E724DB /* Purchase.swift in Sources */,
+				1FDA17EA2BDFBD3600257A29 /* Sale.swift in Sources */,
 				1F74369E2BCE9D2C00D9F813 /* ProductTableViewCell.swift in Sources */,
 				1F7436A02BCEB96800D9F813 /* Product.swift in Sources */,
 				1F74369B2BCE9C6300D9F813 /* CompanyViewController.swift in Sources */,
 				1FB7EA3E2BD14EF300C0F61E /* CompanyTableViewCell.swift in Sources */,
+				1FDA17F22BDFD9B000257A29 /* PurchaseTableViewCell.swift in Sources */,
 				1F3BE4662BCD5CE8009D8C35 /* SettingViewController.swift in Sources */,
 				1F3BE4532BCD1854009D8C35 /* HomePageViewController.swift in Sources */,
+				1F51CF662BDFB99500E724DB /* PurchaseTransactionsViewController.swift in Sources */,
 				1F7436992BCE992B00D9F813 /* ProductViewController.swift in Sources */,
+				1F51CF742BDFBA4600E724DB /* UpdatePurchaseTransactionsViewController.swift in Sources */,
 				1F25D4DB2BD44B64001B5996 /* UpdateCompInfoViewController.swift in Sources */,
 				1F7D2B322BD29DA600E86A5E /* Constants.swift in Sources */,
+				1F51CF6D2BDFBA0000E724DB /* AddSalesResultsViewController.swift in Sources */,
+				1F51CF6A2BDFB9B900E724DB /* SalesResultsViewController.swift in Sources */,
+				1F51CF722BDFBA3600E724DB /* AddPurchaseTransactionsViewController.swift in Sources */,
+				1F51CF682BDFB9AB00E724DB /* SalesTransactionsViewController.swift in Sources */,
 				1F25D4D02BD44494001B5996 /* UpdateProductViewController.swift in Sources */,
 				1F25D4D62BD44B26001B5996 /* AddCompAddressViewController.swift in Sources */,
 				1F7436A22BCEB9E600D9F813 /* Company.swift in Sources */,
 				1F64FEB32BCC66B300B96BB3 /* SceneDelegate.swift in Sources */,
+				1FDA17F02BDFBDA400257A29 /* District.swift in Sources */,
+				1FDA17EE2BDFBD8D00257A29 /* Province.swift in Sources */,
 				1F25D4D42BD44B15001B5996 /* AddCompInfoViewController.swift in Sources */,
 				1F25D4DF2BD44B7D001B5996 /* UpdateCompBankViewController.swift in Sources */,
 			);
