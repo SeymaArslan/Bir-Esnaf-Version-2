@@ -50,7 +50,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     }()
     
     private let companyProdTitle: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.text = "Product Name"
         label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = UIColor(named: Colors.labelColourful)
@@ -91,7 +91,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     }()
     
     private let quantityTextField: UITextField = {
-       let textField = UITextField()
+        let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "Quantity"
         textField.borderStyle = .roundedRect
@@ -108,7 +108,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     }()
     
     private let totalCostTextField: UITextField = {
-       let textField = UITextField()
+        let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "Total Cost"
         textField.borderStyle = .roundedRect
@@ -125,7 +125,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     }()
     
     private let dateTextField: UITextField = {
-       let textField = UITextField()
+        let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
         textField.placeholder = "Date"
         textField.borderStyle = .roundedRect
@@ -145,7 +145,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        configuration()
     }
     
     
@@ -160,5 +160,42 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     
     
     //MARK: - Snapkit Function
+    func configuration() {
+        addSubview()
+        
+        backgroundImage.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
+        contentView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
+        closeButton.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(40)
+            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
+        }
+        
+        
+    }
+    
+    func addSubview() {
+        view.addSubview(backgroundImage)
+        view.addSubview(contentView)
+        view.addSubview(closeButton)
+        view.addSubview(companyProdTitle)
+        view.addSubview(companyProdTextField)
+        view.addSubview(unitPriceTitle)
+        view.addSubview(unitPriceTextField)
+        view.addSubview(quantityTitle)
+        view.addSubview(quantityTextField)
+        view.addSubview(totalCostLabel)
+        view.addSubview(totalCostTextField)
+        view.addSubview(dateTitle)
+        view.addSubview(dateTextField)
+        view.addSubview(updateButton)
+    }
+    
     
 }
+
