@@ -20,6 +20,7 @@ class PurchaseTransactionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configureLeftBarButton()
         setTableViewDelegates()
         purchases = fetchData()
         configureTableView()
@@ -29,16 +30,28 @@ class PurchaseTransactionsViewController: UIViewController {
     
 
     //MARK: - Button Actions
+    @objc func backButtonPressed() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @objc func addButtonTap() {
-        let addProdVC = AddProductViewController()
-        present(addProdVC, animated: true)
+        let addPurTransVC = AddPurchaseTransactionsViewController()
+        present(addPurTransVC, animated: true)
     }
     
     
     //MARK: - Views
+    private func configureLeftBarButton() {
+        navigationItem.hidesBackButton = false
+        navigationItem.title = "Purchase Transactions"
+        self.navigationItem.leftBarButtonItems = [UIBarButtonItem(image: UIImage(systemName: "arrow.left"), style: .plain, target: self, action: #selector(self.backButtonPressed))]
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "customColor2")
+    }
+    
     func createAddButton() {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTap))
         navigationItem.rightBarButtonItem = addButton
+        navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "customColor2")
     }
     
     

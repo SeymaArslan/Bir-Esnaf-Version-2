@@ -11,6 +11,7 @@ import SnapKit
 class UpdatePurchaseTransactionsViewController: UIViewController {
     
     var selectedPurchase: Purchase?
+    var data: [String] = ["Test1", "Test2", "Test3", "Test4", "Test5", "Test6",  "Test7",  "Test8",  "Test9", "Test10"]
     
     //MARK: - Create UI
     private let backgroundImage: UIImageView = {
@@ -51,7 +52,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     
     private let companyProdTitle: UILabel = {
         let label = UILabel()
-        label.text = "Product Name"
+        label.text = "Product Name:"
         label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = UIColor(named: Colors.labelColourful)
         return label
@@ -67,7 +68,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     
     private let unitPriceTitle: UILabel = {
         let label = UILabel()
-        label.text = "Unit Price"
+        label.text = "Unit Price:"
         label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = UIColor(named: Colors.labelColourful)
         return label
@@ -84,7 +85,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     
     private let quantityTitle: UILabel = {
         let label = UILabel()
-        label.text = "Quantity"
+        label.text = "Quantity:"
         label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = UIColor(named: Colors.labelColourful)
         return label
@@ -101,7 +102,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     
     private let totalCostLabel: UILabel = {
         let label = UILabel()
-        label.text = "Total Cost"
+        label.text = "Total Cost:"
         label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = UIColor(named: Colors.labelColourful)
         return label
@@ -118,7 +119,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     
     private let dateTitle: UILabel = {
         let label = UILabel()
-        label.text = "Date"
+        label.text = "Date:"
         label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = UIColor(named: Colors.labelColourful)
         return label
@@ -142,20 +143,40 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
         return button
     }()
     
+    let datePicker = UIDatePicker()
+    
+    
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fetchData()
+        
+        createDatePicker()
+        setupToolBar()
+        setupBackgroundTap()
+        
+        addDelegate()
         configuration()
+    }
+    
+    
+    //MARK: - Delegates
+    func addDelegate() {
+        compPicker.delegate = self
+        compPicker.dataSource = self
+        
+        companyProdTextField.delegate = self
     }
     
     
     //MARK: - Button Actions
     @objc func cancelButtonPressed() {
-        
+        dismiss(animated: true, completion: nil)
     }
     
     @objc func updateButtonPressed() {
-        
+        print("updateButtonPressed")
     }
     
     
@@ -176,13 +197,90 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
             make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
         }
         
+        compName.snp.makeConstraints { make in
+            make.top.equalTo(50)
+            make.leading.equalTo(20)
+        }
         
+        compPicker.snp.makeConstraints { make in
+            make.top.equalTo(compName.snp.bottom)
+            make.centerX.equalToSuperview()
+        }
+        
+        companyProdTitle.snp.makeConstraints { make in
+            make.top.equalTo(compPicker.snp.bottom).offset(20)
+            make.leading.equalTo(20)
+        }
+        
+        companyProdTextField.snp.makeConstraints { make in
+            make.leading.equalTo(companyProdTitle.snp.trailing).offset(12)
+            make.centerY.equalTo(companyProdTitle)
+            textFeildConst(make: make)
+        }
+        
+        unitPriceTitle.snp.makeConstraints { make in
+            make.top.equalTo(companyProdTitle.snp.bottom).offset(22)
+            make.leading.equalTo(20)
+        }
+        
+        unitPriceTextField.snp.makeConstraints { make in
+            make.leading.equalTo(companyProdTitle.snp.trailing).offset(12)
+            make.centerY.equalTo(unitPriceTitle)
+            textFeildConst(make: make)
+        }
+        
+        quantityTitle.snp.makeConstraints { make in
+            make.top.equalTo(unitPriceTitle.snp.bottom).offset(22)
+            make.leading.equalTo(20)
+        }
+        
+        quantityTextField.snp.makeConstraints { make in
+            make.leading.equalTo(companyProdTitle.snp.trailing).offset(12)
+            make.centerY.equalTo(quantityTitle)
+            textFeildConst(make: make)
+        }
+        
+        totalCostLabel.snp.makeConstraints { make in
+            make.top.equalTo(quantityTitle.snp.bottom).offset(22)
+            make.leading.equalTo(20)
+        }
+        
+        totalCostTextField.snp.makeConstraints { make in
+            make.leading.equalTo(companyProdTitle.snp.trailing).offset(12)
+            make.centerY.equalTo(totalCostLabel)
+            textFeildConst(make: make)
+        }
+        
+        dateTitle.snp.makeConstraints { make in
+            make.top.equalTo(totalCostLabel.snp.bottom).offset(22)
+            make.leading.equalTo(20)
+        }
+        
+        dateTextField.snp.makeConstraints { make in
+            make.leading.equalTo(companyProdTitle.snp.trailing).offset(12)
+            make.centerY.equalTo(dateTitle)
+            textFeildConst(make: make)
+        }
+        
+        updateButton.snp.makeConstraints { make in
+            make.top.equalTo(dateTitle.snp.bottom).offset(80)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(38)
+            make.width.equalTo(103)
+        }
+    }
+    
+    func textFeildConst(make: ConstraintMaker) {
+        make.trailing.lessThanOrEqualToSuperview().inset(10)
+        make.width.equalTo(200)
     }
     
     func addSubview() {
         view.addSubview(backgroundImage)
         view.addSubview(contentView)
         view.addSubview(closeButton)
+        view.addSubview(compName)
+        view.addSubview(compPicker)
         view.addSubview(companyProdTitle)
         view.addSubview(companyProdTextField)
         view.addSubview(unitPriceTitle)
@@ -197,5 +295,81 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     }
     
     
+    //MARK: - Input Accessories
+    @objc func doneButtonClicked() {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "tr_TR")
+        formatter.dateStyle = .medium
+        formatter.dateFormat = "dd-MM-yyyy"
+        formatter.timeStyle = .none
+        dateTextField.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
+    }
+    
+    func createDatePicker() {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Ekle", style: .plain, target: nil, action: #selector(doneButtonClicked))
+        toolbar.setItems([doneButton], animated: true)
+        
+        dateTextField.inputAccessoryView = toolbar
+        dateTextField.inputView = datePicker
+        datePicker.datePickerMode = .date
+    }
+    
+    
+    //MARK: - Data Operations
+    func fetchData() {
+        if let pured = selectedPurchase {
+            companyProdTextField.text = pured.productName
+            unitPriceTextField.text = pured.price
+            quantityTextField.text = pured.total
+            totalCostTextField.text = pured.totalPrice
+            dateTextField.text = pured.buyDate
+        }
+    }
+     
 }
 
+
+//MARK: - Extensions
+extension UpdatePurchaseTransactionsViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return data.count
+    }
+}
+
+
+
+extension UpdatePurchaseTransactionsViewController: UITextFieldDelegate {
+    @objc func dismissKeyboard() {
+        view.endEditing(false)
+    }
+    
+    private func setupToolBar() {
+        let bar = UIToolbar()
+        let doneButton = UIBarButtonItem(title: "Tamam", style: .plain, target: self, action: #selector(dismissKeyboard))
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        bar.items = [flexSpace, flexSpace, doneButton]
+        bar.sizeToFit()
+        
+        unitPriceTextField.inputAccessoryView = bar
+        quantityTextField.inputAccessoryView = bar
+        totalCostTextField.inputAccessoryView = bar
+    }
+    
+    private func setupBackgroundTap() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        companyProdTextField.endEditing(true)
+        return true
+    }
+}
