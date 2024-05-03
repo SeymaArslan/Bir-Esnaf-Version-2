@@ -15,9 +15,9 @@ struct Sale: Codable {
     let saleId: String
     let userMail: String
     let prodName: String
-    let salePrice: String
-    let saleTotal: String
-    let saleTotalPrice: String
+    let totalPrice: String // toplam fiyat
+    let productPrice: String // satış fiyatı
+    let quantityOrPiece: String // miktar/adet
     let saleDate: String
     let count: String
 }

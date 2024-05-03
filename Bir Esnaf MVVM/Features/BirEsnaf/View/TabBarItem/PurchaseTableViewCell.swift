@@ -53,26 +53,26 @@ class PurchaseTableViewCell: UITableViewCell {
         compName.font = UIFont.systemFont(ofSize: 17, weight: .medium)
         compName.snp.makeConstraints { make in
             make.top.equalTo(15)
-            make.leading.equalTo(15)
+            make.leading.equalTo(10)
             make.trailing.equalTo(10)
         }
         
         prodName.textColor = UIColor(named: Colors.label)
-        prodName.font = UIFont.systemFont(ofSize: 16)
+        prodName.font = UIFont.systemFont(ofSize: 16, weight: .light)
         prodName.snp.makeConstraints { make in
-            make.top.equalTo(42)
+            make.top.equalTo(40)
             make.leading.equalTo(15)
         }
 
         totalTitle.textColor = UIColor(named: Colors.label)
-        totalTitle.font = UIFont.systemFont(ofSize: 15)
+        totalTitle.font = UIFont.systemFont(ofSize: 15, weight: .light)
         totalTitle.snp.makeConstraints { make in
             make.top.equalTo(70)
             make.leading.equalTo(15)
         }
         
         total.textColor = UIColor(named: Colors.label)
-        total.font = UIFont.systemFont(ofSize: 15)
+        total.font = UIFont.systemFont(ofSize: 15, weight: .light)
         total.snp.makeConstraints { make in
             make.leading.equalTo(totalTitle.snp.trailing).offset(10)
             make.centerY.equalTo(totalTitle)
@@ -80,14 +80,14 @@ class PurchaseTableViewCell: UITableViewCell {
         }
         
         dateTitle.textColor = UIColor(named: Colors.label)
-        dateTitle.font = UIFont.systemFont(ofSize: 15)
+        dateTitle.font = UIFont.systemFont(ofSize: 15, weight: .light)
         dateTitle.snp.makeConstraints { make in
-            make.top.equalTo(92)
+            make.top.equalTo(95)
             make.leading.equalTo(15)
         }
         
         date.textColor = UIColor(named: Colors.label)
-        date.font = UIFont.systemFont(ofSize: 15)
+        date.font = UIFont.systemFont(ofSize: 15, weight: .light)
         date.snp.makeConstraints { make in
             make.leading.equalTo(dateTitle.snp.trailing).offset(10)
             make.centerY.equalTo(dateTitle)
@@ -96,7 +96,7 @@ class PurchaseTableViewCell: UITableViewCell {
         
         view.backgroundColor = UIColor(named: Colors.blue)
         view.snp.makeConstraints { make in
-            make.top.equalTo(128)
+            make.top.equalTo(125)
             make.leading.equalTo(15)
             make.height.equalTo(2)
             make.width.equalTo(325)

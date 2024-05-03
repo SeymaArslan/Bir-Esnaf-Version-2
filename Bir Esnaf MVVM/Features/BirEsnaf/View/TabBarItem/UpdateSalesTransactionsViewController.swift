@@ -1,5 +1,5 @@
 //
-//  AddSalesResultsViewController.swift
+//  UpdateSalesResultsViewController.swift
 //  Bir Esnaf MVVM
 //
 //  Created by Seyma Arslan on 29.04.2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddSalesResultsViewController: UIViewController {
+class UpdateSalesTransactionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

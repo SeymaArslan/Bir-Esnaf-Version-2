@@ -83,18 +83,18 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
         return textField
     }()
     
-    private let quantityTitle: UILabel = {
+    private let amountTitle: UILabel = {
         let label = UILabel()
-        label.text = "Quantity:"
+        label.text = "Amount:"
         label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = UIColor(named: Colors.labelColourful)
         return label
     }()
     
-    private let quantityTextField: UITextField = {
+    private let amountTextField: UITextField = {
         let textField = UITextField()
         textField.textColor = UIColor(named: Colors.label)
-        textField.placeholder = "Quantity"
+        textField.placeholder = "Amount"
         textField.borderStyle = .roundedRect
         textField.keyboardType = .decimalPad
         return textField
@@ -229,19 +229,19 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
             textFeildConst(make: make)
         }
         
-        quantityTitle.snp.makeConstraints { make in
+        amountTitle.snp.makeConstraints { make in
             make.top.equalTo(unitPriceTitle.snp.bottom).offset(22)
             make.leading.equalTo(20)
         }
         
-        quantityTextField.snp.makeConstraints { make in
+        amountTextField.snp.makeConstraints { make in
             make.leading.equalTo(companyProdTitle.snp.trailing).offset(12)
-            make.centerY.equalTo(quantityTitle)
+            make.centerY.equalTo(amountTitle)
             textFeildConst(make: make)
         }
         
         totalCostLabel.snp.makeConstraints { make in
-            make.top.equalTo(quantityTitle.snp.bottom).offset(22)
+            make.top.equalTo(amountTitle.snp.bottom).offset(22)
             make.leading.equalTo(20)
         }
         
@@ -285,8 +285,8 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
         view.addSubview(companyProdTextField)
         view.addSubview(unitPriceTitle)
         view.addSubview(unitPriceTextField)
-        view.addSubview(quantityTitle)
-        view.addSubview(quantityTextField)
+        view.addSubview(amountTitle)
+        view.addSubview(amountTextField)
         view.addSubview(totalCostLabel)
         view.addSubview(totalCostTextField)
         view.addSubview(dateTitle)
@@ -324,7 +324,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
         if let pured = selectedPurchase {
             companyProdTextField.text = pured.productName
             unitPriceTextField.text = pured.price
-            quantityTextField.text = pured.total
+            amountTextField.text = pured.total
             totalCostTextField.text = pured.totalPrice
             dateTextField.text = pured.buyDate
         }
@@ -359,7 +359,7 @@ extension UpdatePurchaseTransactionsViewController: UITextFieldDelegate {
         bar.sizeToFit()
         
         unitPriceTextField.inputAccessoryView = bar
-        quantityTextField.inputAccessoryView = bar
+        amountTextField.inputAccessoryView = bar
         totalCostTextField.inputAccessoryView = bar
     }
     

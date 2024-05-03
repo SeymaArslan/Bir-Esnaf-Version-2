@@ -22,8 +22,8 @@
 		1F51CF662BDFB99500E724DB /* PurchaseTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF652BDFB99500E724DB /* PurchaseTransactionsViewController.swift */; };
 		1F51CF682BDFB9AB00E724DB /* SalesTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF672BDFB9AB00E724DB /* SalesTransactionsViewController.swift */; };
 		1F51CF6A2BDFB9B900E724DB /* SalesResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF692BDFB9B900E724DB /* SalesResultsViewController.swift */; };
-		1F51CF6D2BDFBA0000E724DB /* AddSalesResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF6C2BDFBA0000E724DB /* AddSalesResultsViewController.swift */; };
-		1F51CF6F2BDFBA1100E724DB /* UpdateSalesResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF6E2BDFBA1100E724DB /* UpdateSalesResultsViewController.swift */; };
+		1F51CF6D2BDFBA0000E724DB /* AddSalesTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF6C2BDFBA0000E724DB /* AddSalesTransactionsViewController.swift */; };
+		1F51CF6F2BDFBA1100E724DB /* UpdateSalesTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF6E2BDFBA1100E724DB /* UpdateSalesTransactionsViewController.swift */; };
 		1F51CF722BDFBA3600E724DB /* AddPurchaseTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF712BDFBA3600E724DB /* AddPurchaseTransactionsViewController.swift */; };
 		1F51CF742BDFBA4600E724DB /* UpdatePurchaseTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF732BDFBA4600E724DB /* UpdatePurchaseTransactionsViewController.swift */; };
 		1F51CF772BDFBCA500E724DB /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51CF762BDFBCA500E724DB /* Purchase.swift */; };
@@ -46,6 +46,7 @@
 		1FDA17EE2BDFBD8D00257A29 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA17ED2BDFBD8D00257A29 /* Province.swift */; };
 		1FDA17F02BDFBDA400257A29 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA17EF2BDFBDA400257A29 /* District.swift */; };
 		1FDA17F22BDFD9B000257A29 /* PurchaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA17F12BDFD9B000257A29 /* PurchaseTableViewCell.swift */; };
+		1FDA17F42BE5053F00257A29 /* SalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA17F32BE5053F00257A29 /* SalesTableViewCell.swift */; };
 		5EF36CE240880B172C009C7A /* Pods_Bir_Esnaf_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE2EA558C666FBE7FAC612 /* Pods_Bir_Esnaf_MVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +66,8 @@
 		1F51CF652BDFB99500E724DB /* PurchaseTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTransactionsViewController.swift; sourceTree = "<group>"; };
 		1F51CF672BDFB9AB00E724DB /* SalesTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTransactionsViewController.swift; sourceTree = "<group>"; };
 		1F51CF692BDFB9B900E724DB /* SalesResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesResultsViewController.swift; sourceTree = "<group>"; };
-		1F51CF6C2BDFBA0000E724DB /* AddSalesResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSalesResultsViewController.swift; sourceTree = "<group>"; };
-		1F51CF6E2BDFBA1100E724DB /* UpdateSalesResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSalesResultsViewController.swift; sourceTree = "<group>"; };
+		1F51CF6C2BDFBA0000E724DB /* AddSalesTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSalesTransactionsViewController.swift; sourceTree = "<group>"; };
+		1F51CF6E2BDFBA1100E724DB /* UpdateSalesTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSalesTransactionsViewController.swift; sourceTree = "<group>"; };
 		1F51CF712BDFBA3600E724DB /* AddPurchaseTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPurchaseTransactionsViewController.swift; sourceTree = "<group>"; };
 		1F51CF732BDFBA4600E724DB /* UpdatePurchaseTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePurchaseTransactionsViewController.swift; sourceTree = "<group>"; };
 		1F51CF762BDFBCA500E724DB /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		1FDA17ED2BDFBD8D00257A29 /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
 		1FDA17EF2BDFBDA400257A29 /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
 		1FDA17F12BDFD9B000257A29 /* PurchaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTableViewCell.swift; sourceTree = "<group>"; };
+		1FDA17F32BE5053F00257A29 /* SalesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewCell.swift; sourceTree = "<group>"; };
 		9490B79BCA71BA04AD717D4A /* Pods-Bir Esnaf MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf MVVM.debug.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AC870DBA2CAC1D20476D5 /* Pods-Bir Esnaf MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf MVVM.release.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf MVVM/Pods-Bir Esnaf MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		EFAE2EA558C666FBE7FAC612 /* Pods_Bir_Esnaf_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bir_Esnaf_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,8 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				1F51CF672BDFB9AB00E724DB /* SalesTransactionsViewController.swift */,
-				1F51CF6E2BDFBA1100E724DB /* UpdateSalesResultsViewController.swift */,
-				1F51CF6C2BDFBA0000E724DB /* AddSalesResultsViewController.swift */,
+				1F51CF6E2BDFBA1100E724DB /* UpdateSalesTransactionsViewController.swift */,
+				1F51CF6C2BDFBA0000E724DB /* AddSalesTransactionsViewController.swift */,
+				1FDA17F32BE5053F00257A29 /* SalesTableViewCell.swift */,
 			);
 			name = Sales;
 			sourceTree = "<group>";
@@ -430,7 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F25D4D22BD44AF6001B5996 /* CompanyDetailViewController.swift in Sources */,
-				1F51CF6F2BDFBA1100E724DB /* UpdateSalesResultsViewController.swift in Sources */,
+				1F51CF6F2BDFBA1100E724DB /* UpdateSalesTransactionsViewController.swift in Sources */,
 				1F25D4DD2BD44B70001B5996 /* UpdateCompAddressViewController.swift in Sources */,
 				1FDA17EC2BDFBD5E00257A29 /* Shop.swift in Sources */,
 				1F64FEB52BCC66B300B96BB3 /* ViewController.swift in Sources */,
@@ -453,7 +456,7 @@
 				1F51CF742BDFBA4600E724DB /* UpdatePurchaseTransactionsViewController.swift in Sources */,
 				1F25D4DB2BD44B64001B5996 /* UpdateCompInfoViewController.swift in Sources */,
 				1F7D2B322BD29DA600E86A5E /* Constants.swift in Sources */,
-				1F51CF6D2BDFBA0000E724DB /* AddSalesResultsViewController.swift in Sources */,
+				1F51CF6D2BDFBA0000E724DB /* AddSalesTransactionsViewController.swift in Sources */,
 				1F51CF6A2BDFB9B900E724DB /* SalesResultsViewController.swift in Sources */,
 				1F51CF722BDFBA3600E724DB /* AddPurchaseTransactionsViewController.swift in Sources */,
 				1F51CF682BDFB9AB00E724DB /* SalesTransactionsViewController.swift in Sources */,
@@ -465,6 +468,7 @@
 				1FDA17EE2BDFBD8D00257A29 /* Province.swift in Sources */,
 				1F25D4D42BD44B15001B5996 /* AddCompInfoViewController.swift in Sources */,
 				1F25D4DF2BD44B7D001B5996 /* UpdateCompBankViewController.swift in Sources */,
+				1FDA17F42BE5053F00257A29 /* SalesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,18 +40,18 @@ class PurchaseTransactionsViewController: UIViewController {
     }
     
     
-    //MARK: - Views
+    //MARK: - UIs
     private func configureLeftBarButton() {
         navigationItem.hidesBackButton = false
         navigationItem.title = "Purchase Transactions"
         self.navigationItem.leftBarButtonItems = [UIBarButtonItem(image: UIImage(systemName: "arrow.left"), style: .plain, target: self, action: #selector(self.backButtonPressed))]
-        self.navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "customColor2")
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor(named: Colors.blue)
     }
     
     func createAddButton() {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTap))
         navigationItem.rightBarButtonItem = addButton
-        navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "customColor2")
+        navigationItem.rightBarButtonItem?.tintColor = UIColor(named: Colors.blue)
     }
     
     
@@ -79,17 +79,17 @@ class PurchaseTransactionsViewController: UIViewController {
     
     //MARK: - Helpers
     func showDeleteWarning(for indexPath: IndexPath) {
-        let alertController = UIAlertController(title: "You are about to delete the product", message: "Click Ok to continue", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "You are about to delete the Purchase Transaction", message: "Click Ok to continue", preferredStyle: .alert)
         let cancelAct = UIAlertAction(title: "Cancel", style: .cancel)
         alertController.addAction(cancelAct)
         let okAct = UIAlertAction(title: "Ok", style: .destructive) { action in
-            self.deleteProduct(at: indexPath)
+            self.deletePurchaseTransaction(at: indexPath)
         }
         alertController.addAction(okAct)
         self.present(alertController, animated: true)
     }
     
-    func deleteProduct(at indexPath: IndexPath) {
+    func deletePurchaseTransaction(at indexPath: IndexPath) {
         print("delete items")
     }
     
@@ -101,7 +101,6 @@ class PurchaseTransactionsViewController: UIViewController {
     
     @objc func refresh(_ sender: Any) {
         if let refreshControl = sender as? UIRefreshControl, refreshControl.isRefreshing {
-            print("Get data function")
             refreshControl.endRefreshing()
         }
     }
@@ -138,9 +137,7 @@ extension PurchaseTransactionsViewController: UITableViewDelegate, UITableViewDa
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        print("Scroll")
         if let refreshControl = scrollView.refreshControl, refreshControl.isRefreshing {
-            print("Get data function")
             refreshControl.endRefreshing()
         }
     }
