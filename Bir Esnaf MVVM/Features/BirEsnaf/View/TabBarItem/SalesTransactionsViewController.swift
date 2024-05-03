@@ -118,6 +118,13 @@ extension SalesTransactionsViewController: UITableViewDelegate, UITableViewDataS
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedSale = sales[indexPath.row]
+        let updateSaleVC = UpdateSalesTransactionsViewController()
+        updateSaleVC.selectedSale = selectedSale
+        present(updateSaleVC, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { contextualAction, view, boolValue in
             self.showDeleteWarning(for: indexPath)

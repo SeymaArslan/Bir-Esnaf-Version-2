@@ -38,7 +38,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     
     private let compName: UILabel = {
         let label = UILabel()
-        label.text = "Products"
+        label.text = "Companies"
         label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         label.textColor = UIColor(named: Colors.blue)
         return label
@@ -146,7 +146,7 @@ class UpdatePurchaseTransactionsViewController: UIViewController {
     let datePicker = UIDatePicker()
     
     
-    //MARK: - Life Cycle
+    //MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         
