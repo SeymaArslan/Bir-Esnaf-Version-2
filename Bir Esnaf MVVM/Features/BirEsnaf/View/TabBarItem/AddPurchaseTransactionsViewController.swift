@@ -35,7 +35,7 @@ class AddPurchaseTransactionsViewController: UIViewController {
         return button
     }()
     
-    private let compName: UILabel = {
+    private let compNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Products"
         label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
@@ -192,13 +192,13 @@ class AddPurchaseTransactionsViewController: UIViewController {
             make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
         }
         
-        compName.snp.makeConstraints { make in
+        compNameLabel.snp.makeConstraints { make in
             make.top.equalTo(50)
             make.leading.equalTo(20)
         }
         
         compPicker.snp.makeConstraints { make in
-            make.top.equalTo(compName.snp.bottom)
+            make.top.equalTo(compNameLabel.snp.bottom)
             make.centerX.equalToSuperview()
         }
         
@@ -274,7 +274,7 @@ class AddPurchaseTransactionsViewController: UIViewController {
         view.addSubview(backgroundImage)
         view.addSubview(contentView)
         view.addSubview(closeButton)
-        view.addSubview(compName)
+        view.addSubview(compNameLabel)
         view.addSubview(compPicker)
         view.addSubview(companyProdTitle)
         view.addSubview(companyProdTextField)
