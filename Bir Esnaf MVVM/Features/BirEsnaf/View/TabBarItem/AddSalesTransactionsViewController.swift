@@ -9,25 +9,25 @@ import UIKit
 import SnapKit
 
 class AddSalesTransactionsViewController: UIViewController {
-
+    
     var data: [String] = ["Test1", "Test2", "Test3", "Test4", "Test5", "Test6",  "Test7",  "Test8",  "Test9", "Test10"]
     
     //MARK: - Create UIs
     private let backgroundImage: UIImageView = {
-       let imageView = UIImageView()
+        let imageView = UIImageView()
         imageView.image = UIImage(named: Images.background)
         imageView.contentMode = .scaleToFill
         return imageView
     }()
     
     private let contentView: UIView = {
-       let view = UIView()
+        let view = UIView()
         view.backgroundColor = UIColor(white: 1, alpha: 0)
         return view
     }()
     
     private let closeButton: UIButton = {
-       let button = UIButton()
+        let button = UIButton()
         let image = UIImage(systemName: "xmark")?.withRenderingMode(.alwaysTemplate)
         button.setImage(image, for: .normal)
         button.tintColor = UIColor(named: Colors.blue)
@@ -36,7 +36,7 @@ class AddSalesTransactionsViewController: UIViewController {
     }()
     
     private let prodTitle: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.text = "Products"
         label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         label.textColor = UIColor(named: Colors.blue)
@@ -44,13 +44,13 @@ class AddSalesTransactionsViewController: UIViewController {
     }()
     
     private let prodPicker: UIPickerView = {
-       let picker = UIPickerView()
+        let picker = UIPickerView()
         
         return picker
     }()
     
     private let prodPriceTitle: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.text = "Product Price:"
         label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = UIColor(named: Colors.blue)
@@ -58,7 +58,7 @@ class AddSalesTransactionsViewController: UIViewController {
     }()
     
     private let prodPrice: UITextField = {
-       let textField = UITextField()
+        let textField = UITextField()
         textField.placeholder = "Product Price"
         textField.textColor = UIColor(named: Colors.label)
         textField.keyboardType = .decimalPad
@@ -101,7 +101,7 @@ class AddSalesTransactionsViewController: UIViewController {
     }()
     
     private let dateTitle: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.text = "Date:"
         label.textColor = UIColor(named: Colors.labelColourful)
         label.font = UIFont.systemFont(ofSize: 17)
@@ -130,11 +130,11 @@ class AddSalesTransactionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         createDatePicker()
         setupToolBar()
         setupBackgroundTap()
-
+        
         addDelegate()
         configuration()
     }
@@ -147,8 +147,8 @@ class AddSalesTransactionsViewController: UIViewController {
         prodPicker.dataSource = self
     }
     
-
-//MARK: - Button Actions
+    
+    //MARK: - Button Actions
     @objc func saveButtonPressed() {
         print("save button pressed")
     }

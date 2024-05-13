@@ -75,27 +75,32 @@ class ShopViewController: UIViewController {
         backgroundImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+        
         contentView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+        
         iconImage.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(100)
             make.height.equalTo(197)
             make.width.equalTo(186)
         }
+        
         purchaseButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(iconImage.snp.bottom).offset(100)
             make.height.equalTo(55)
             make.width.equalTo(200)
         }
+        
         salesButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(purchaseButton.snp.bottom).offset(40)
             make.height.equalTo(55)
             make.width.equalTo(185)
         }
+        
         saleResultButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(salesButton.snp.bottom).offset(40)

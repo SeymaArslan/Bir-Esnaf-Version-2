@@ -319,7 +319,7 @@ class CompanyDetailViewController: UIViewController {
         
         separateingViewAB.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(addressTitle.snp.bottom).offset(50) // test et yine
+            make.top.equalTo(addressTitle.snp.bottom).offset(50)
             make.height.equalTo(2)
             make.width.equalTo(325)
         }
